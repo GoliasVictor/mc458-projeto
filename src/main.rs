@@ -94,8 +94,8 @@ impl RandGenerator {
 fn main() {
     let mut rng = RandGenerator::new();
     loop {
-        let ainfo = rng.gen_matrix_info((5, 1), 0.3);
-        let binfo = rng.gen_matrix_info((1, 5), 0.3);
+        let ainfo = rng.gen_matrix_info((5, 1), 1.0);
+        let binfo = rng.gen_matrix_info((1, 5), 1.0);
         let res1=  mul::<SimpleMatrix>(ainfo.clone(), binfo.clone());
         let res2 = mul::<HashMapMatrix>(ainfo.clone(), binfo.clone());
         let res3 = mul::<TreeMatrix>(ainfo.clone(), binfo.clone());

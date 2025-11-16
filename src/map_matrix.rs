@@ -22,7 +22,6 @@ pub trait MapVec <K : Copy, U : Clone> : Map<K, Vec<U>> {
 
 pub struct MapMatrix <T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> {
     size: Pair,
-	// Values stored in a map structure is not transposed
     values: TransposableMap<T>,
 	phatom: std::marker::PhantomData<LM>
 }
@@ -75,12 +74,12 @@ impl<T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> Matrix for MapMatrix<T
     fn add(a : &MapMatrix<T, LM>, b : &MapMatrix<T, LM>) -> MapMatrix<T, LM> {
         let mut c = MapMatrix::new(a.size);
         for (pos, va) in a.values.iter()  {
-			let va = *va;
-            let pos = pos;
-            let vb = b.get(pos);
-
-            c.set(pos, vb + va);
+            c.set(pos, *va);
         }
+		for (pos, vb) in b.values.iter()  {
+			let value =  c.get(pos)+ *vb;
+			c.set(pos, value);
+		}
         return c
     }
     fn mul(a : &MapMatrix<T, LM>, b : &MapMatrix<T, LM>) -> MapMatrix<T, LM> {
