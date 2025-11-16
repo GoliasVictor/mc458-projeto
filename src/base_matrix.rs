@@ -5,30 +5,7 @@ pub struct SimpleMatrix {
     size: Pair,
     values: HashMap<Pair, f64>
 }
-impl Into<MatrixInfo> for SimpleMatrix {
-    fn into(self) -> MatrixInfo {
-        let mut values = Vec::new();
-        for (pos, value) in self.values {
-            values.push((pos, value));
-        }
-        MatrixInfo {
-            size: self.size,
-            values
-        }
-    }
-}
-impl From<MatrixInfo> for SimpleMatrix {
-    fn from(info: MatrixInfo) -> Self {
-		let mut matrix = SimpleMatrix {
-			size: info.size,
-			values: HashMap::new(),
-		};
-		for (pos, value) in info.values {
-			matrix.set(pos, value);
-		}
-		matrix
-    }
-}
+
 impl Matrix for SimpleMatrix {
 	fn new(size: Pair) -> SimpleMatrix{
 		SimpleMatrix {
@@ -87,6 +64,26 @@ impl Matrix for SimpleMatrix {
             }
         }
         return c;
+    }
+    fn from_info(info: &MatrixInfo) -> Self {
+		let mut matrix = SimpleMatrix {
+			size: info.size,
+			values: HashMap::new(),
+		};
+		for (pos, value) in info.values.iter() {
+			matrix.set(*pos, *value);
+		}
+		matrix
+    }
+    fn to_info(&self) -> MatrixInfo {
+        let mut values = Vec::new();
+        for (pos, value) in self.values.iter(){
+            values.push((*pos, *value));
+        }
+        MatrixInfo {
+            size: self.size,
+            values
+        }
     }
 }
 

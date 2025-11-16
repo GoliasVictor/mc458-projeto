@@ -1,11 +1,13 @@
 pub type Pair = (usize, usize); 
-pub trait Matrix : From<MatrixInfo> + Into<MatrixInfo> {
+pub trait Matrix {
     fn new(size: Pair) -> Self;
     fn set(&mut self, pos: Pair, value: f64);
     fn get(&self, pos: Pair) -> f64;
     fn transposed(self) -> Self;
     fn add(a : &Self, b : &Self) -> Self;
     fn mul(a : &Self, b : &Self) -> Self;
+	fn from_info(info: &MatrixInfo) -> Self;
+	fn to_info(&self) -> MatrixInfo;
 }
 #[derive(Clone)]
 pub struct MatrixInfo {

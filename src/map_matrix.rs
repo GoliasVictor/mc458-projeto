@@ -25,27 +25,6 @@ pub struct MapMatrix <T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> {
     values: TransposableMap<T>,
 	phatom: std::marker::PhantomData<LM>
 }
-impl<T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> From<MatrixInfo> for MapMatrix<T, LM> {
-	fn from(info: MatrixInfo) -> Self {
-		MapMatrix {
-			size: info.size,
-			values: TransposableMap::new(T::from_iter(info.values)),
-			phatom: std::marker::PhantomData
-		}
-	}
-}
-impl<T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> Into<MatrixInfo> for MapMatrix<T, LM> {
-	fn into(self) -> MatrixInfo {
-		let mut values = Vec::new();
-		for (pos, value) in self.values.iter() {
-			values.push(( pos, value.into_owned()));
-		}
-		MatrixInfo {
-			size: self.size,
-			values
-		}
-	}
-}
 
 impl<T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> Matrix for MapMatrix<T, LM> {
 	fn new(size: Pair) -> MapMatrix<T, LM>{
@@ -111,9 +90,22 @@ impl<T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> Matrix for MapMatrix<T
 		}
         return c;
     }
+
+	fn to_info(&self) -> MatrixInfo {
+		let mut values = Vec::new();
+		for (pos, value) in self.values.iter() {
+			values.push(( pos, value.into_owned()));
+		}
+		MatrixInfo {
+			size: self.size,
+			values
+		}
+	}
+	fn from_info(info: &MatrixInfo) -> Self {
+		MapMatrix {
+			size: info.size,
+			values: TransposableMap::new(T::from_iter(info.values.iter().map(|(pos, value)| (*pos, *value)))),
+			phatom: std::marker::PhantomData
+		}
+	}
 }
-
-
-
-
-

@@ -2,11 +2,12 @@
 mod base_matrix;
 mod map_matrix;
 mod basic;
+mod alloc;
 use base_matrix::SimpleMatrix;
-use std::collections::{HashMap, HashSet};
+use std::{collections::{HashMap, HashSet}};
 use rand::prelude::*;
+use crate::{basic::{Matrix, MatrixInfo, Pair}, map_matrix::{HashMapStore, MapMatrix, TreeStore}};
 
-use crate::{basic::{Matrix, MatrixInfo, Pair}, map_matrix::{MapMatrix, HashMapStore, TreeStore}};
 
 
 const EPSILON : f64 = 1e-8;
@@ -49,10 +50,12 @@ fn diff(expected: &MatrixInfo, current: &MatrixInfo) -> Vec<(Pair, (Option<f64>,
     }
     diff
 }
-fn mul<M :  Matrix>(ainfo: MatrixInfo, binfo: MatrixInfo)  -> MatrixInfo{
-    let a = M::from(ainfo).transposed();
-    let b = M::from(binfo).transposed();
-    M::mul(&b, &a).into()
+fn mul<M :  Matrix>(ainfo: &MatrixInfo, binfo: &MatrixInfo)  -> MatrixInfo {
+    let a = M::from_info(ainfo).transposed();
+    let b = M::from_info(binfo).transposed();
+    M::mul(&b, &a).to_info()
+    
+
 }
 type HashMapMatrix = MapMatrix<HashMapStore<Pair, f64>, HashMapStore<usize, Vec<(Pair, f64)>>>;
 type TreeMatrix = MapMatrix<TreeStore<Pair, f64>, TreeStore<usize, Vec<(Pair, f64)>>>;
@@ -94,11 +97,15 @@ impl RandGenerator {
 fn main() {
     let mut rng = RandGenerator::new();
     loop {
-        let ainfo = rng.gen_matrix_info((5, 1), 1.0);
-        let binfo = rng.gen_matrix_info((1, 5), 1.0);
-        let res1=  mul::<SimpleMatrix>(ainfo.clone(), binfo.clone());
-        let res2 = mul::<HashMapMatrix>(ainfo.clone(), binfo.clone());
-        let res3 = mul::<TreeMatrix>(ainfo.clone(), binfo.clone());
+        let ainfo = rng.gen_matrix_info((10, 10), 1.0);
+        let binfo = rng.gen_matrix_info((10, 10), 1.0);
+        println!("Matrix SimpleMatrix:");
+        let res1=  mul::<SimpleMatrix>(&ainfo, &binfo);
+        println!("Matrix HashMapMatrix:");
+        let res2 = mul::<HashMapMatrix>(&ainfo, &binfo);
+        println!("Matrix TreeMatrix:");
+        let res3 = mul::<TreeMatrix>(&ainfo, &binfo);
+        
         let cop2 = info_eq(&res1, &res2);
         let cop3 = info_eq(&res1, &res3); 
         println!("{}", cop2);
@@ -112,6 +119,7 @@ fn main() {
             }   
             break;
         }
+        break;
     }
     
 }
