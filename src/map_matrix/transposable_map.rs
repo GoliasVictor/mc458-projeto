@@ -2,6 +2,7 @@ use std::{borrow::Cow};
 
 use crate::{basic::Pair, map_matrix::Map};
 
+#[derive(Clone)]
 pub struct TransposableMap<M : Map<Pair, f64>> {
 	map: M,
 	transposed: bool
@@ -58,6 +59,16 @@ impl<M : Map<Pair, f64>> Map<Pair, f64> for TransposableMap<M> {
 				}))
 		} else {
 			self.map.iter()
+		}
+	}
+	fn iter_mut<'a>(&'a mut self) -> Box<dyn Iterator<Item=(Pair, &'a mut f64)> + 'a> {
+		if self.transposed {
+			Box::new(self.map.iter_mut()
+				.map(|(pos, value)| {
+					((pos.1, pos.0) , value) 
+				}))
+		} else {
+			self.map.iter_mut()
 		}
 	}
 }

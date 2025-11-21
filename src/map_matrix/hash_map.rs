@@ -1,9 +1,12 @@
+
 use crate::map_matrix::{Map, MapVec};
 
 /// https://docs.rs/hashbrown/latest/src/hashbrown/raw/mod.rs.html#1496-1524
 /// https://docs.rs/hashbrown/latest/src/hashbrown/raw/mod.rs.html#103-160
 
 use std::{borrow::Cow, collections::HashMap, hash::Hash};
+
+#[derive(Clone)]
 pub struct HashMapStore<K :Copy + Eq + Hash, V> {
 	values: HashMap<K, V>,
 }
@@ -28,6 +31,11 @@ impl<K : Copy + Eq + Hash, V : Clone> Map<K, V> for HashMapStore<K, V> {
 	fn iter<'a>(&'a self) -> Box<dyn Iterator<Item=(K, Cow<'a, V>)> + 'a> {
 		Box::new(self.values.iter()
 			.map(|(k, v)| (*k, Cow::Borrowed(v))) )
+	}
+
+	fn iter_mut<'a>(&'a mut self) -> Box<dyn Iterator<Item=(K, &'a mut V)> + 'a> {
+		Box::new(self.values.iter_mut()
+			.map(|(k, v)| (*k, v)) )
 	}
 } 
 

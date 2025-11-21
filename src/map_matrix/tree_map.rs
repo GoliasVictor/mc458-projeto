@@ -2,6 +2,8 @@ use crate::map_matrix::{Map, MapVec};
 
 use std::{borrow::Cow, collections::BTreeMap, hash::Hash};
 
+
+#[derive(Clone)]
 pub struct TreeStore<K : Copy + Eq + Hash + Ord, V> {
 	values: BTreeMap<K, V>,
 }
@@ -24,6 +26,10 @@ impl<K : Copy + Eq + Hash + Ord, V : Clone> Map<K, V> for TreeStore<K, V> {
 	fn iter<'a>(&'a self) -> Box<dyn Iterator<Item=(K, Cow<'a, V>)> + 'a> {
 		Box::new(self.values.iter()
 			.map(|(k, v)| (*k, Cow::Borrowed(v))) )
+	}
+	fn iter_mut<'a>(&'a mut self) -> Box<dyn Iterator<Item=(K, &'a mut V)> + 'a> {
+		Box::new(self.values.iter_mut()
+			.map(|(k, v)| (*k, v)) )
 	}
 
 }
