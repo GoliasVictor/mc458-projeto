@@ -1,40 +1,39 @@
 //#![allow(unused)]
 mod matrix_generator;
 use std::{
-    any::TypeId,
-    cell::{Cell, RefCell},
     fmt::Display,
     hint::black_box,
     rc::Rc,
-    sync::Arc,
     time::{Duration, Instant},
 };
 
-use criterion::{Bencher, BenchmarkId, Criterion, criterion_group, criterion_main};
 use matrix_generator::MatrixGenerator;
-use projeto::{HashMapMatrix, Matrix, MatrixInfo, Pair, TableMatrix, TreeMatrix};
+use projeto::{HashMapMatrix, Matrix, Pair, TableMatrix, TreeMatrix};
 use rand::{Rng, seq::SliceRandom};
 use serde::{Deserialize, Serialize};
 use serde_json;
 use std::fs;
 
-fn mul<T: Matrix>(a: T, b: T) -> () {
-    black_box(T::mul(&a, &b));
+fn mul<T: Matrix>(a: &T, b: &T) -> T {
+    black_box(T::mul(a, b))
 }
-fn add<T: Matrix>(a: T, b: T) -> () {
-    black_box(T::add(&a, &b));
+fn add<T: Matrix>(a: &T, b: &T) -> T {
+    black_box(T::add(a, b))
 }
-fn transposed<T: Matrix>(a: T) -> () {
-    black_box(a.transposed());
+
+fn transposed<T: Matrix>(a: T) -> T {
+    black_box(a.transposed())
 }
-fn muls<T: Matrix>(a: T, scalar: f64) -> () {
-    black_box(T::muls(&a, scalar));
+fn muls<T: Matrix>(a: T, scalar: f64) -> T {
+    black_box(T::muls(&a, scalar))
 }
-fn get<T: Matrix>(a: T, pos: Pair) -> () {
+fn get<T: Matrix>(a: T, pos: Pair) -> T {
     black_box(a.get(pos));
+    a
 }
-fn set<T: Matrix>(mut a: T, pos: Pair, value: f64) -> () {
+fn set<T: Matrix>(mut a: T, pos: Pair, value: f64) -> T {
     black_box(a.set(pos, value));
+    a
 }
 trait Cross<A: Clone>: Iterator<Item = A> {
     fn cross<'a, B, IB>(self, ib: IB) -> impl Iterator<Item = (A, B)>
@@ -63,7 +62,7 @@ where
 }
 type MatrixGen<M> = Box<dyn Fn() -> M>;
 type BuilderMatrixGen<M> = Rc<dyn Fn(usize, usize) -> MatrixGen<M>>;
-type Operation<M> = Rc<dyn Fn(M, M) -> ()>;
+type Operation<M> = Rc<dyn Fn(&M, &M) -> M>;
 
 struct Id<'a>(&'a str, u32, i32, &'a str, &'a str, &'a str);
 
@@ -118,41 +117,100 @@ struct ExponentialRecord {
     matrix_type: String,
     i: usize,
     population: usize,
+    operation: String,
     durations: Vec<Duration>,
 }
+
+fn get_density(i : u32) -> Vec<f64> { 
+    if i < 4 {
+        vec![1.0 / 100.0, 5.0 / 100.0, 10.0 / 100.0, 20.0 / 100.0]
+    } else {
+        vec![
+            1.0 / 10.0_f64.powi(i as i32),
+            1.0 / 10.0_f64.powi(i as i32 + 1),
+            1.0 / 10.0_f64.powi(i as i32 + 2),
+        ]
+    }
+}
 fn exponential_benchs<M: Matrix>(name: &str, records: &mut Vec<ExponentialRecord>, max_expoent : u32) {
-    for i in 1..=max_expoent {
-        let len = 10usize.pow(i);
-        let densities = if i < 4 {
-            vec![1.0 / 100.0, 5.0 / 100.0, 10.0 / 100.0, 20.0 / 100.0]
-        } else {
-            vec![
-                1.0 / 10.0_f64.powi(i as i32),
-                1.0 / 10.0_f64.powi(i as i32 + 1),
-                1.0 / 10.0_f64.powi(i as i32 + 2),
-            ]
-        };
-        for den in densities {
-            let population = (den * (len * len) as f64) as usize;
-            let mut j = 0;
-            let start_bench = Instant::now();
-            let mut durations = Vec::new();
-            while (j < 3 || Instant::now()  - start_bench < Duration::from_secs(3)) && j < 100 {
-                let a = MatrixGenerator::uniform::<M>((len, len), population);
-                let b = MatrixGenerator::uniform::<M>((len, len), population);
-                let start = Instant::now();
-                black_box(mul::<M>(black_box(a), black_box(b)));
-                let duration = Instant::now() - start;
-                j += 1;
-                durations.push(duration);
+    let bin_operations: [(&str, Operation<M>); 2] = [
+        ("mul", Rc::new(|a, b| mul::<M>(a, b))),
+        ("add", Rc::new(|a, b| add::<M>(a, b))),
+    ];
+    let unary_operations: [(&str, Rc<dyn Fn(M, Pair, f64) -> M>); 4] = [
+        ("transpose", Rc::new(|a, _pos, _s| transposed::<M>(a))),
+        ("muls", Rc::new(|a, _pos, s| muls::<M>(a, s))),
+        ("get", Rc::new(|a, pos, _s| get::<M>(a, pos))),
+        ("set", Rc::new(|a, pos, s| set::<M>(a, pos,s))),
+    ];
+    let max_duration = Duration::from_secs(1);
+    let max_iterations = 20;
+    let min_iterations = 1;
+
+    for (op_name, op) in bin_operations.iter() {
+        for i in 1..=max_expoent {
+            let len = 10usize.pow(i);
+            let densities = get_density(i);
+            for den in densities {
+                let population = (den * (len * len) as f64) as usize;
+                let mut j = 0;
+                let start_bench = Instant::now();
+                let mut durations = Vec::new();
+                while (j < min_iterations || Instant::now()  - start_bench < max_duration) && j < max_iterations {
+                    let a = MatrixGenerator::uniform::<M>((len, len), population);
+                    let b = MatrixGenerator::uniform::<M>((len, len), population);
+                    let start = Instant::now();
+                    let c = black_box(op(black_box(&a), black_box(&b)));
+                    let duration = Instant::now() - start;
+                    drop(black_box(c));
+                    j += 1;
+                    durations.push(duration);
+                }
+                println!("{}, {}, {}, {:?}, {}", name, i, population, durations.iter().sum::<Duration>().div_f64(durations.len() as f64), durations.len());
+                records.push(ExponentialRecord {
+                    matrix_type: name.to_string(),
+                    operation: op_name.to_string(),
+                    i: i as usize,
+                    population,
+                    durations,
+                });
             }
-            println!("{}, {}, {}, {:?}, {}", name, i, population, durations.iter().sum::<Duration>().div_f64(durations.len() as f64), durations.len());
-            records.push(ExponentialRecord {
-                matrix_type: std::any::type_name::<M>().to_string(),
-                i: i as usize,
-                population,
-                durations,
-            });
+        }
+    }
+    let mut rand = rand::rng();
+    for (op_name, op) in unary_operations.iter() {
+        for i in 1..=max_expoent {
+            let len = 10usize.pow(i);
+            let densities = get_density(i);
+            for den in densities {
+                let population = (den * (len * len) as f64) as usize;
+                let mut j = 0;
+                let start_bench = Instant::now();
+                let mut durations = Vec::new();
+                while (j < min_iterations || Instant::now()  - start_bench < max_duration) && j < max_iterations {
+                    let a = MatrixGenerator::uniform::<M>((len, len), population);
+                    let pos = (
+                        rand.random_range(0..len),
+                        rand.random_range(0..len),
+                    );
+                    let scalar = rand.random_range(-10.0..10.0);
+
+                    let start = Instant::now();
+                    black_box(op(black_box(a), black_box(pos), black_box(scalar)));
+                    let duration = Instant::now() - start;
+                    
+                    j += 1;
+                    durations.push(duration);
+                }
+                println!("{}, {}, {}, {:?}, {}", name, i, population, durations.iter().sum::<Duration>().div_f64(durations.len() as f64), durations.len());
+                records.push(ExponentialRecord {
+                    matrix_type: name.to_string(),
+                    operation: op_name.to_string(),
+                    i: i as usize,
+                    population,
+                    durations,
+                });
+            }
         }
     }
 }
@@ -162,12 +220,12 @@ fn bench_matrix<M: Matrix>(name: &str, records: &mut Records, qt_samples: usize)
 
     let bin_operations: [(&str, Operation<M>); 2] = [
         ("mul", Rc::new(|a, b| mul::<M>(a, b))),
-        ("add", Rc::new(|a, b: M| add::<M>(a, b))),
+        ("add", Rc::new(|a, b| add::<M>(a, b))),
     ];
-    let unary_operations: [(&str, Rc<dyn Fn(M, Pair, f64) -> ()>); 4] = [
-        ("transpose", Rc::new(|a, pos, s| transposed::<M>(a))),
-        ("muls", Rc::new(|a, pos, s| muls::<M>(a, s))),
-        ("get", Rc::new(|a, pos, s| get::<M>(a, pos))),
+    let unary_operations: [(&str, Rc<dyn Fn(M, Pair, f64) -> M>); 4] = [
+        ("transpose", Rc::new(|a, _pos, _s| transposed::<M>(a))),
+        ("muls", Rc::new(|a, _pos, s| muls::<M>(a, s))),
+        ("get", Rc::new(|a, pos, _s| get::<M>(a, pos))),
         ("set", Rc::new(|a, pos, s| set::<M>(a, pos,s))),
     ];
     let min = 10.0;
@@ -196,9 +254,10 @@ fn bench_matrix<M: Matrix>(name: &str, records: &mut Records, qt_samples: usize)
         let a = MatrixGenerator::uniform::<M>(size, population);
         let b = MatrixGenerator::uniform::<M>(size, population);
         let start = Instant::now();
-        black_box(op(black_box(a), black_box(b)));
+        let c = black_box(op(black_box(&a), black_box(&b)));
         let duration = Instant::now() - start;
         durations.push(duration);
+        drop(c);
 
         records.add_record(Record {
             matrix_type: name.to_string(),
@@ -223,15 +282,16 @@ fn bench_matrix<M: Matrix>(name: &str, records: &mut Records, qt_samples: usize)
         let population = (density * (len * len) as f64) as usize;
         let (op_name, op) = nop;
         let mut durations = Vec::new();
-        let a = MatrixGenerator::uniform::<M>(size, population);
+        let a = black_box(MatrixGenerator::uniform::<M>(size, population));
         let pos = (
             rand.random_range(0..size.0),
             rand.random_range(0..size.1),
         );
         let scalar = rand.random_range(-10.0..10.0);
         let start = Instant::now();
-        black_box(op(black_box(a), black_box(pos), black_box(scalar)));
+        let c = black_box(op(a, black_box(pos), black_box(scalar)));
         let duration = Instant::now() - start;
+        drop(black_box(c));
         durations.push(duration);
 
         records.add_record(Record {
@@ -245,15 +305,15 @@ fn bench_matrix<M: Matrix>(name: &str, records: &mut Records, qt_samples: usize)
     }
 }
 
-
-pub fn criterion_benchmark() {
-    let mut exp_records = Vec::new();
-    exponential_benchs::<TableMatrix>("TableMatrix", &mut exp_records, 3);
-    exponential_benchs::<HashMapMatrix>("HashMapMatrix", &mut exp_records, 6);
-    exponential_benchs::<TreeMatrix>("TreeMatrix", &mut exp_records, 6);
+pub fn b2(){
+    let mut records = Vec::new();
+    exponential_benchs::<TableMatrix>("TableMatrix", &mut records, 3);
+    exponential_benchs::<HashMapMatrix>("HashMapMatrix", &mut records, 6);
+    exponential_benchs::<TreeMatrix>("TreeMatrix", &mut records, 6);
     let file = fs::File::create(format!("b2.json")).unwrap();
-    serde_json::to_writer_pretty(file, &exp_records).unwrap();
-
+    serde_json::to_writer_pretty(file, &records).unwrap();
+}
+pub fn b1(){
     let mut records = Records {
         records: Vec::new(),
     };
@@ -264,16 +324,11 @@ pub fn criterion_benchmark() {
     serde_json::to_writer_pretty(file, &records.records).unwrap();
 }
 
-pub fn main() {
-    criterion_benchmark();
+pub fn criterion_benchmark() {
+    b1();
+    b2();
 }
 
-fn adds(mut a: u32, b: u32) -> u32 {
-    let diff = loop {
-        if a < b {
-            break a + b;
-        }
-        a -= 1;
-    };
-    diff
+pub fn main() {
+    criterion_benchmark();
 }

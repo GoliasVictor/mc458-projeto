@@ -1,0 +1,183 @@
+\subsection{TreeMapMatrix}
+
+\subsubsection{set}
+
+Para modificar um valor, tem tempo, que a razão tende a crescer um pouco a mais que $\log k$, porém, extremamente inferior a linear, demonstrando que tem uma aproximação ao estimado que é $\Theta(\log k)$  
+\duasfiguras
+    {graficos/TreeMatrix/set/1-log_matrix_performance.png}
+    {$\log k$}
+    {graficos/TreeMatrix/set/2-linear_matrix_performance.png}
+    {$k$}
+\pagebreak
+\subsubsection{get}
+
+Para acesso, as mesmas caracteristicas que set. 
+\duasfiguras
+    {graficos/TreeMatrix/get/1-log_matrix_performance.png}
+    {$\log k$}
+    {graficos/TreeMatrix/get/2-linear_matrix_performance.png}
+    {$k$}
+
+\subsubsection{Transposição}
+O comportamento da transposição tende a parecer linear ao crescer, mas demonstra uma taxa de crescimento.
+\duasfiguras
+    {graficos/TreeMatrix/transpose/0-constant_matrix_performance.png}
+    {$1$}
+    {graficos/TreeMatrix/transpose/1-log_matrix_performance.png}
+    {$k$}
+
+    
+\subsubsection{Multiplicação Escalar}
+O grafico se demonstra crescente em relação a $\log k$ e decrescente em relação a $k$, portanto é uma complexidade pior que logaritmica, mas melhor que linear 
+\duasfiguras
+    {graficos/TreeMatrix/muls/1-log_matrix_performance.png}
+    {$\log k$}
+    {graficos/TreeMatrix/muls/2-linear_matrix_performance.png}
+    {$k$}
+\pagebreak
+\subsubsection{Adição}
+O comportamento para soma, tem uma tendencia extremamente alta para convergir na razão pelo linear, mostrando um comportamento claramente na parte testada $\Theta(k)$, melhor do que o calculado.
+\duasfiguras
+    {graficos/TreeMatrix/add/2-linear_matrix_performance.png}
+    {$k$}
+    {graficos/TreeMatrix/add/3-nlog_matrix_performance.png}
+    {$k\log k$}
+    
+\subsubsection{Multiplicação Matrizes}
+
+Para multiplicação de matrizes, o algoritmo demonstra ter um comportamento próximo de $k \log k \sqrt k$  porém com uma tendencia de crescimento, porém com uma tendencia decrescente em relação a $k^2$.
+
+\duasfiguras
+    {graficos/TreeMatrix/mul/5-nlogsqrt_matrix_performance.png}
+    {$k \log k \sqrt k$}
+    {graficos/TreeMatrix/mul/6-quadratic_matrix_performance.png}
+    {$k^2$}
+
+
+
+\pagebreak
+
+\subsection{HashMapMatrix}
+
+\subsubsection{set}
+
+Para o set, apesar do esperado ter sido estimado como constante, as métricas tenderam  para estar se aproximando em relação a $\log k$, e ser muito menor que linear.
+\duasfiguras
+    {graficos/HashMapMatrix/set/1-log_matrix_performance.png}
+    {$\log k$}
+    {graficos/HashMapMatrix/set/2-linear_matrix_performance.png}
+    {$k$}
+\subsubsection{get}
+Para acesso, as mesmo comportamento que set. 
+\duasfiguras
+    {graficos/HashMapMatrix/get/1-log_matrix_performance.png}
+    {$\log k$}
+    {graficos/HashMapMatrix/get/2-linear_matrix_performance.png}
+    {$k$}
+\pagebreak
+\subsubsection{Transposição}
+O comportamento da transposição está próximo do comportamento do get e do set, mostrando que provavelmente deve ser um problema em relação ao experimento, o fato de estar mais próximo de log do que constante.
+\duasfiguras
+    {graficos/HashMapMatrix/transpose/1-log_matrix_performance.png}
+    {$1$}
+    {graficos/HashMapMatrix/transpose/2-linear_matrix_performance.png}
+    {$k$}
+
+    
+\subsubsection{Multiplicação Escalar}
+Na multiplicação de escalar é possivel perceber que tem uma performance suavemente melhor que $k \log k$ e suavemente pior que $k$. Mas além disso um detalhe importante é perceber o comportamente ocilatorio do valor, que se dá ao quanto da tabela é ocupada, onde quando temos uma tabela com a capacidade proxima do tamanho, temos uma melhor performance, e como a ocupação da tabela vai variando, então a performance varia, mas se mantêm aproximadamente a razão.
+\duasfiguras
+    {graficos/HashMapMatrix/muls/2-linear_matrix_performance.png}
+    {$k$}
+    {graficos/HashMapMatrix/muls/3-nlog_matrix_performance.png}
+    {$k\log k$}
+\pagebreak
+\subsubsection{Adição}
+Tem um comportamento um pouco pior que linear, e um pouco melhor que log-linear, que provavelmente é causado pelas colisões de hash.
+\duasfiguras
+    {graficos/HashMapMatrix/add/2-linear_matrix_performance.png}
+    {$k$}
+    {graficos/HashMapMatrix/add/3-nlog_matrix_performance.png}
+    {$k\log k$}
+    
+\subsubsection{Multiplicação Matrizes}
+
+Para multiplicação de matrizes, o algoritmo demonstra ter um comportamento próximo de $k \log k \sqrt k$  porém com uma tendencia de crescimento, porém com uma tendencia decrescente em relação a $k^2$, então como estimado é melhor que $k^2$. 
+
+\duasfiguras
+    {graficos/HashMapMatrix/mul/5-nlogsqrt_matrix_performance.png}
+    {$k \log k \sqrt k$}
+    {graficos/HashMapMatrix/mul/6-quadratic_matrix_performance.png}
+    {$k^2$}
+
+
+
+
+\pagebreak  
+
+\subsection{TableMatrix}
+Para TableMatrix, a analise assintótica em relação ao quantidade de elementos não nulo, não faz sentido, porque não existe um limite superior de quão ruim um caso pode ser, onde o caso sempre cresce indefinidamente junto ao tamanho da matriz e não em relação a quantidade de elementos não nulos. 
+
+Isso é perceptivel nos graficos de que há uma clara separação na maior parte deles do tempo em relação a cada taxa de ocupação (indicada pelas cores dos pontos).
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/set/0-constant_matrix_performance.png}
+        \caption{Set}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/get/0-constant_matrix_performance.png}
+        \caption{Get}
+    \hfill
+    \end{minipage}
+        \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/transpose/0-constant_matrix_performance.png}
+        \caption{Transpor}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/muls/0-constant_matrix_performance.png}
+        \caption{Multiplicação escalar}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/add/0-constant_matrix_performance.png}
+        \caption{Adição}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/mul/0-constant_matrix_performance.png}
+        \caption{Multiplicação Matriz}
+    \end{minipage}
+\end{figure}
+
+\pagebreak
+
+Pegando a multiplicação de matriz em destaque é perceptivel, que a linha do supremo segue exatamente uma linha de cores iguais, que é exatamente os pontos do $1\%$ de ocupação, onde é 1\% de matrizes muito maiores que a população, então se diverge das outras.
+
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.6\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/mul/0-constant_matrix_performance.png}
+        \caption{Multiplicação Matriz}
+    \end{minipage}
+\end{figure}
+Mas caso, plotamos os valores, mas ao invés de colocarmos no eixo x a quantidade de elementos não nulos, colocarmos a quantidade de elementos no total, é perceptível que os dados são muito mais correlacionados. 
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.6\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{graficos/TableMatrix/mul/size_matrix_performance.png}
+        \caption{Multiplicação Matriz}
+    \end{minipage}
+\end{figure}

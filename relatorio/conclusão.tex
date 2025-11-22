@@ -1,0 +1,17 @@
+\section{Conclusão}
+
+Dado toda analise teórica e medições feitas é possível tirar certas conclusões:
+
+Como a memoria é usada, liberada e feita é extremamente importante, visto que mesmo para a TableMatriz, acesso aleatório piorou com o crescimento  da matriz, por causa de fatores como leitura da memoria, caching de memoria e paginação da memoria pelo sistema operacional (Uma matriz $10^2\times 10^2$ já é maior que 4kb que é maior que uma pagina de sistema). 
+
+Para implementação que não são esparsas é extremamente mais eficiente o uso de matrizes diretas, porque tem um aproveitamento muito melhor da arquitetura do computador.  
+
+HashTableMatrix tem uma eficiência maior no geral do que TreeMapMatrix, porém, ao custo de que pode ter custos imprevisíveis certas operações. Sendo um deles o custo de aumentar o tamanho da HashTable, que apesar de ser amortizado pode acabar levando a interrupções temporárias em sistemas, como por exemplo, caso haja uma matriz esparsa que ocupe 1GB de memoria, e seja necessário aumentar o tamanho dela, isso levaria a ter que começar a fazer uma copia de 1GB de memoria. Problema esse que não existe no TreeMapMatrix, por causa que o crescimento e decrescimento é granular, sem a necessidade de liberação e alocação de quantidades gigantes de memoria.
+
+\subsection{Nota: Abstração}
+Um problema que aconteceu durante o desenvolvimento, foi de que foi tentando fazer multiplicação de matrizes de tamanho $10^5\times 10^5$ com 1\% de ocupação porém não foi possível e não foi por causa do tempo de processamento, mas sim por causa por causa de que a matriz resultante da multiplicação tinha uma taxa de ocupação muito maior que fazia com que a matriz resultante e os artefatos intermediários não cabiam na memoria.
+
+Para isso considerei usar resolver esse problema, aproveitando exatamente de como funciona o MapMatrix, sem reescrever a MapMatrix, e implementar uma BTree persistida no disco, no qual não iria afetar de forma tão grande o desempenho por ser no disco, por causa que a implementação de MapMatrix de multiplicação e soma (mais custosos), usa iteradores que faz com que para iterar na matriz, bastasse ler cada bloco de disco para memoria, iterar sobre eles, fazendo as operações sequencialmente. Fazendo assim leitura do disco em grandes blocos e de forma sequencial algo extremamente mais eficiente do que acesso aleatório do disco.
+
+Isso sem precisar modificar o funcionamento do MapMatrix, já que é feito sobre um dos pilares da programação a \textbf{abstração}.
+

@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[portuguese]{babel}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\newcommand{\mdc}{\text{mdc}}
+\usepackage[a4paper, margin=2cm]{geometry}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\theoremstyle{definition}
+\newtheorem{pergunta}{Pergunta}
+\newtheorem{subperg}{Parte}[pergunta]
+\newtheorem{lema}{Lema}[pergunta]
+\newtheorem{definicao}{Definição}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\newtheorem{prop}{Propriedade}[definicao]
+\title{MC458 - Lista 1}
+\author{José Victor Santana Barbosa - 245511}
+\date{21 de Novembro 2025}
+\title{MapMatrix}
+ 
+\newcommand{\duasfiguras}[5][0.45]{%
+    \begin{figure}[h]
+        \centering
+        \begin{minipage}{#1\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{#2}
+            \caption{#3}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{#1\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{#4}
+            \caption{#5}
+        \end{minipage}
+    \end{figure}
+}
+
+\begin{document} 
+\maketitle
+\tableofcontents
+\section{Resumo}
+O seguinte trabalho, apresenta sobre a implementação de uma estrutura de dados chamada MapMatrix, que representa matrizes esparsas utilizando mapas associativos. A estrutura é genérica e pode ser utilizada com diferentes tipos de armazenamento subjacente, desde possuam interface com certas operações básicas. A seguir, serão detalhadas as principais funcionalidades e características da estrutura MapMatrix.
+
+\section{Introdução}
+
+MapMatrix parte da ideia, de ao invés de representar representar uma matriz como um vetor bidimensional, onde a posição na memoria física do computador tem relação direta com a posição logica da matriz, utilizar uma estrutura de dados chamada mapa associativo (ou dicionario), onde cada elemento da matriz é armazenado como um par chave-valor, onde a chave é a posição do elemento na matriz (representada como uma tupla de índices) e o valor é o valor do elemento na matriz.
+
+\subsection{Iteradores}
+Um recurso que é vastamente utilizado neste projeto são iteradores\footnote{https://doc.rust-lang.org/std/iter/trait.Iterator.html}, que servem para percorrer os valores de alguma estrutura de dados. Na interface de um Iterador é obrigatória a existência de apenas uma única operação, que é a operação de \textit{next()}. Essa operação, que caso haja algum valor ainda no iterador, retorna o próximo valor; e, caso não haja mais nenhum valor disponível, retorna vazio.
+
+\subsection{Mapas}
+Um mapa associativo é uma estrutura de dados que armazena pares chave-valor, permitindo a associação de um valor a uma chave única. Para um mapa associativo ser usado em MapMatrix é necessário que ele possua as seguintes operações:
+\begin{itemize}
+	\item \textbf{new()}: Cria um novo mapa vazio.
+	\item \textbf{get(key)}: Retorna o valor associado a chave key, ou um valor padrão caso a chave não exista no mapa.
+	\item \textbf{set\_or\_insert(key, value)}: Insere o par chave-valor (key, value) no mapa. Se a chave ja existir, atualiza o valor associado a chave.
+	\item \textbf{remove(key)}: Remove o par chave-valor associado a chave key do mapa.
+	\item \textbf{iter() / iter_mut()}: Retorna um iterador sobre os pares chave-valor do mapa.
+	\item \textbf{from\_iter(iter)}: Cria um mapa a partir de um iterador que produz pares chave-valor.
+    \item \textbf{clone()}: Faz uma copia completa de toda a estrutura.
+\end{itemize}
+
+\section{MapMatrix}
+
+A estrutura MapMatrix para ser definida e usada é preciso de dois tipos de mapas auxiliares, um Mapa que armazena os valores da matriz, sendo a chave a posição do elemento e o valor o valor do elemento, e o outro mapa é usando na operação de multiplicação de matrizes, onde é um mapa de índices (colunas ou linhas) para lista de valores.
+Antes de detalhar as operações da estrutura MapMatrix, primeiro vamos falar sobre um tipo especial de mapa associativo que é usado na implementação, chamado TransposableMap.
+\subsection{TransposableMap}
+Para que execução eficiente de transposição de matrizes, foi criado uma estrutura chamada TransposableMap, que ela basicamente encapsula um mapa associativo com chaves sendo pares de índices e adiciona a funcionalidade de transposição.
+
+Além das funcionalidades básicas de um Mapa Associativo, TransposableMap adiciona a funcionalidade de 
+transpor, que faz inversão de um uma flag interna indicando que a matriz foi transposta.
+
+A partir da flag interna, todas as operações sobre o mapa, é verificado se a flag está ativa, caso sim, inverte os índices das chaves antes de realizar a operação e ao retornar os valores. Caso não, executa as operações normalmente. 
+
+A partir dessa estrutura, é possível implementar a operação de transposição de uma matriz em tempo constante, apenas invertendo a flag interna, sem a necessidade de iterar sobre todos os elementos da matriz e trocar suas posições. E sem ser necessário dentro da estrutura MapMatrix, adicionar lógica extra para lidar com a transposição. Já que a o único ponto de entrada e saída de dados da matriz é o mapa encapsulado.
+\input{operacoes}
+
+\section{Implementações}
+\input{hashmapmatrix}
+\input{treemapmatrix}
+\section{Analise}
+\input{analise}
+\pagebreak
+\input{conclusão}
+% \begin{align*}
+% \sum_{c\in A_C}\left( \log |B_L| + \sum_{a\in A}\sum_{b\in B} \mathbf{1}_{a_c = c}\cdot\mathbf{1}_{c=b_l} \right)
+% \\|A_C| \log |B_L|+\sum_{a\in A} \left(\sum_{b\in B} \mathbf{1}_{a_c = b_l} \right)
+% \\|A_C|\log |B_L|  + \sum_{a\in A}\sum_{b\in B} \mathbf{1}_{a_c = b_l} 
+% \\|A_C|\log |B_L|  + \sum_{(a, b)\in A\times B} \mathbf{1}_{a_c = b_l} 
+% \\ \sum _{i=1}^n \left(\sum_{a\in A} \mathbf{1}_{a_c = i} \right)  \left(\sum_{b\in B} \mathbf{1}_{b_l = i} \right)  
+% \end{align*}
+
+% \begin{align*}
+%     \\a_j' = a_j + \delta_a
+% \\a_k' = a_k -\delta_ a
+% \\
+% \\b_j' = b_j + \delta_b
+% \\b_k' = b_k -\delta_b
+% \\\Delta =  a_j'b_j' + a_k'b_k' -(a_jb_j + a_kb_k) 
+% \\\Delta =  (a_j + \delta_a)b_j' + (a_k - \delta_a)b_k' - a_jb_j - a_kb_k
+% \\\Delta =  a_jb_j' + \delta_ab_j' + a_kb_k' - \delta_a b_k'  - a_jb_j - a_kb_k
+% \\\Delta =  a_j(b_j' - b_j) + a_k(b_k'-b_k) + \delta_a (b_j' - b_k')
+% \\\Delta =  a_j(\delta_b) + a_k(-\delta_b) + \delta_a (b_j + \delta _b - (b_k-\delta_b) )
+% \\\Delta =  \delta_b(a_j- a_k) + \delta_a (b_j - b_k +2\delta_b) 
+% \\\Delta =  \delta_b(a_j- a_k) + \delta_a (b_j - b_k)  2\delta_a\delta_b 
+% \end{align*}
+
+% \begin{align*}
+% a'_i = \begin{cases}
+% a_i+\delta &,\text{se } i=j
+% \\ a_i - \delta &, \text{se } i = k
+% \\ a_i &,\text{se não}  
+% \end{cases}
+% \\a_j'+ a_k '= a_j + a_k
+% \\\sum _{i=1}^n a_iy_i <  \sum _{i=1}^n a_i'y_i
+% \\ a_jy_j + a_ky_k <  a_j'y_j + a_k'y_k  
+% \\ a_jy_j + a_ky_k <  (a_j + \delta)y_j + (a_k - \delta)y_k  
+% \\a_jy_j + a_ky_k < a_jy_j + \delta y_j + a_ky_k - \delta y_k  
+% \\0<  \delta (y_j - y_k)
+% \\1=\text{sign}(\delta (y_j - y_k))  
+% \\1=\text{sign}(\delta) \text{sign}(y_j - y_k)  
+% \\\text{sign}(\delta) =\text{sign}(y_j - y_k)  
+% \end{align*}
+
+
+
+% $$m = \frac{|A|(1- d_B )}{d_B (1-c)}$$
+% $$k =  \frac{|A|( d_B - c )}{d_B (1-c)}$$
+
+\end{document}

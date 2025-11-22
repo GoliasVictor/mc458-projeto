@@ -1,0 +1,124 @@
+\subsection{HashMapMatrix}
+
+Essa é a primeira estrutura de dados solicitada, que é a execução de uma MapMatrix usando um HashMap como Mapa.
+
+Essa estrutura usa uma Tabela  Hash, especificamente a Tabela Hash da biblioteca padrão do Rust\footnote{https://doc.rust-lang.org/std/collections/struct.HashMap.html}, que é um porte da tabela SwissTable\footnote{https://abseil.io/blog/20180927-swisstables} desenvolvida pelo Google.
+
+Para a maior parte das operações que usamos do HashMap a complexidade está definida na propria documentação \footnote{https://doc.rust-lang.org/std/collections/\#cost-of-collection-operations}.
+
+Na documentação explicita que as operações de \textit{get}, \textit{insert} e \textit{remove}, possuem complexidade esperada $O(1)$. Que é o caso onde não ocorrem muitas colisões de hash, que é o caso que vamos estar considerando aqui.
+
+Em relação a iterar em todos valores de uma hash table, é especificado na documentação\footnote{https://doc.rust-lang.org/std/collections/struct.HashMap.html\#performance-5}, que na iteração é visitado também os buckets vazios, então é $O(capacidade)$ e não $O(tamanho)$ de elementos no hashset, porém como é uma implementação de hashtable, e a capacidade está crescendo junto com a adição de elementos, e não definida manualmente, é razoavel considerar que a implementação usa mecanismos de quando ultrapassar o fator de carga, a capacidade aumentar por um fator de crescimento, e quando é removido uma certa quantidade de elementos é também feito reconstrução da tabela liberando memoria, portanto vou considerar que é razoável especificar que $capacidade \in \Theta(tamanho)$. (na parte de metricas será visto na pratica que é  isso que acontece)
+
+Em relação a operação de clone, o possui basicamente a mesma questão da iteração, que basicamente copia toda a tabela e isso é relativo a capacidade da tabela.
+
+Portanto temos que 
+\begin{itemize}
+	\item \textbf{new()}: $\Theta(1)\sim$
+	\item \textbf{get(key)}: $\Theta(1)\sim$
+	\item \textbf{set\_or\_insert(key, value)}: $\Theta(1)*\sim$
+	\item \textbf{remove(key)}: $\Theta(1)*\sim$
+	\item \textbf{iterar todos elementos}: $\Theta(k)$ 
+	\item \textbf{from\_iter(iter)}: $\Theta(k)\sim$
+	\item \textbf{clone()}: $\Theta(k)$
+\end{itemize}
+$\sim$ significa complexidade esperada, * significa complexidade amortizada.
+
+Portando, agora sobre a complexidade de cada uma das operações
+
+E para operação de adição a um vetor no caso de mapa de vetores, como é apenas um get, então também é constante
+\subsubsection{Acessar elemento}
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo  esperado:} $\Theta(1) $,
+    \item \textbf{Complexidade de espaço:} $\Theta(1) $,
+\end{enumerate}
+
+\subsubsection{Transpor matriz}
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo  esperado:} $\Theta(1)$,
+    \item \textbf{Complexidade de espaço:} $\Theta(1)$,
+\end{enumerate}
+
+\subsubsection{Multiplicação por escalar}
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo  esperado:}  
+    $$\Theta(k) + \Theta(k)$$
+    $$\Theta(k)$$
+    
+    \item \textbf{Complexidade de espaço:} $\Theta(k)$,
+
+\end{enumerate}
+
+
+\subsubsection{Soma de matrizes} 
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo  esperado:}  
+    $$M_{clone}(k_A) + M_{iter}(k_B) +  k_B(M_{set}(k_C) + M_{get}(k_A))$$
+    $$\Theta(k_A) + \Theta(k_B) +    k_B(\Theta(1) + \Theta(1))$$
+    $$\Theta(k_A  + k_B)$$
+    \item \textbf{Complexidade de espaço:} 
+    $$\Theta(k_C)$$, 
+\end{enumerate}
+
+\subsubsection{Mutiplicação de matrizes}
+
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo esperado:}  
+    $|A_C|$ representa a quantidade de colunas significativas em $A$,
+    $|B_L|$ representa a quantidade de colunas significativas em $B$
+    \begin{enumerate}
+        \item \textbf{Separação:} 
+        $$M_{iter}(k_A)+ M_{iter}(k_B) + k_A LM_{add}(|A_C|) +  k_B LM_{add}(|B_L|)$$
+        $$\Theta(k_A) + \Theta(k_B) + k_A \Theta(1)+  k_B \Theta(1)$$
+        $$\Theta(k_A + k_B)$$ 
+        \item \textbf{Multiplicação:}
+            Na multiplicação esse é o custo para iterar em cada coluna de $A$ e ler uma linha em $B$
+            $$LM_{iter}(|A_C|) + |A_C| LM_{get}(|B_L|)$$
+            $$\Theta(|A_C|) + |A_C|\Theta(1)$$
+            $$\Theta(|A_C|)$$
+            Custo para mutiplicar cada linha por cada coluna
+            $$\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}| (M_{get}(k_C) +  M_{set}(k_C))$$
+            $$\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}| (\Theta(1) +  \Theta(1))$$
+            $$\Theta(1)\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}|$$
+            Para calcularmos a esperança, vamos usar as seguintes duas variaveis indicadores:
+            $$X_{a, i} = \begin{cases}
+                1 &, \text{se coluna de $a$ é $i$}
+                \\0 &, \text{se não}
+            \end{cases}$$
+            
+            $$Y_{b, i} = \begin{cases}
+                1 &, \text{se linha de $b$ é $i$}
+                \\0 &, \text{se não}
+            \end{cases}$$
+            No qual, como está uniformemente distribuído, a chance de uma variável  estar em uma linha/coluna de tamanho $n$ é 
+            $$E[X_{a, i}] = E[Y_{b, i}] = \frac{1}{n}$$
+            Então definimos 
+            $$|A_{c=i}| = \sum_{a\in A} X_{a, i}$$
+            $$|B_{l=i}| = \sum_{b\in B} Y_{b, i} $$
+            Logo
+            $$E[|A_{c=n}|] = \sum_{a\in A} E[X_{a, i}] = \frac{1}{n}\sum_{a\in A} 1 = \frac{k_A}{n}$$
+            $$E[|B_{l=n}|] = \sum_{b\in B} E[Y_{b, i}] = \frac{1}{n}\sum_{b\in B} 1 = \frac{k_B}{n} $$
+            
+            Então reescrevemos a complexiade esperada dessa parte da seguinte forma:
+            $$\text E\left[\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}|\right] = \sum _{i= 1}^n  \text E\left[|A_{c=i}|\right] \text E\left[|B_{l=i}|\right]  $$
+            Logo 
+            $$\sum _{i= 1}^n  \text E\left[|A_{c=i}|\right] \text E\left[|B_{l=i}|\right] = \sum _{i= 1}^n \frac{k_A}{n}\frac{k_B}{n} = n\frac{k_A}{n}\frac{k_B}{n} =  \frac{k_Ak_B}{n} $$            
+            Logo então a complexidade esperada de mutilicar as linhas pelas colunas é:
+            $$\Theta(|A_C|+ \frac{k_Ak_B}{n})$$
+            
+    \end{enumerate}
+    Juntando então cada parte temos que a complexidade total da mutiplicação de matriz é
+    $$\Theta\left( k_A+ k_B+ |A_C|+ \frac{k_Ak_B}{n}\right)$$
+    Podemos considerar definir a media de elementos por linha em $B$, 
+    $$d_B = \frac{k_B}{n}$$
+    E também ignorar $|A_C|$ porque $k_A > |A_C|$
+    Então temos:
+    $$\Theta\left(k_B+ k_Ad_B\right)$$
+    E como $d_B < k_B$
+    $$k_B+ k_Ad_B \in O(k_Ak_B)$$
+    
+    
+    \item \textbf{Complexidade de espaço:} 
+    $$U(k_C) +U(k_A) + U(k_B)$$, 
+    O custo de espaço é o custo da nova matriz criada, mais o custo de manter o mapa auxiliar de colunas e linhas. 
+\end{enumerate}

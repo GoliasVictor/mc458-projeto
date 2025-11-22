@@ -1,0 +1,30 @@
+Agora irei descrever a analise experimental, na qual eu fiz de duas formas.
+\begin{enumerate}
+    \item Grafica: Fiz experimentos com matrizes quadradas de lado no intervalo $[10^{1}, 10^{3}]$, no qual é feito samples igualmente espaçados. E assim gerei graficos a partir disso.
+    \item Tabular: Fiz experimentos com matrizes quadradas de lado no intervalo $[10^{1}, 10^{6}]$, para cada potencia de 10, é estimado o tempo medio  
+\end{enumerate}
+
+Estou me referindo por TableMatrix, como a implementação que faz operações com uma representação de linhas e vetores na memoria. 
+\input{comparacao}
+
+\section{Analise Assintótica}
+
+Foi gerado graficos, onde o eixo X é a quantidade de elementos que cada matriz possui, e o eixo Y é a razão da duração do sample por alguma função assintótica.
+
+Isso é usado por causa de que:
+$$\lim_{n\to \infty} \frac{f(x)}{g(x) } \in \mathbb{R}\to f(x) \in \Theta(x)$$
+$$\lim_{n\to \infty} \frac{f(x)}{g(x) } = \infty \to f(x) \in \Omega(g(x))$$
+$$\lim_{n\to \infty} \frac{f(x)}{g(x) } = 0 \to f(x) \in O(g(x))$$
+
+Portanto, dado isso, podemos definir então por cima, de que caso a razão dos samples estiver tendendo 0 então é $O$, caso esteja crescente então é $\Omega$, caso esteja nem decrescendo indefinidamente nem crescendo indefinidamente então é $\Theta$ 
+
+Nos graficos há tres partes:
+\begin{enumerate}
+    \item Curva do Supremo: Curva pontos $(k, d)$ que possuem a propriedade $\forall (k', d'), k> k' \to d > d'$, portanto o ponto que é supremo dos valores a partir dele para frente.
+    \item Curva do Infimo: Curva dos pontos $(k, d)$ que possuem a propriedade $\forall (k', d'), k> k' \to d < d'$, portanto o ponto que é o infimo dos valores a partir dele para frente.
+
+    \item Pontos Samples coloridos: Os pontos que foram obtidos do experimento, onde são coloridos com base na ocupação. 
+    \item Linha media ponderada: Linha horizontal da media ponderada da duração, onde o peso de cada ponto é a população. 
+\end{enumerate}
+
+\input{analise-assintotica}

@@ -1,0 +1,127 @@
+
+\subsection{TreeMapMatrix}
+
+A segunda estrutura de dados, com requisitos garantidos, foi implementada usando o MapMatrix com o Mapa associativo usado para guardar os dados sendo uma BTree.
+
+Como o HashMap, foi implementado usando a implementação padrão de BTree da biblioteca padrão no Rust\footnote{\label{btree}https://doc.rust-lang.org/std/collections/struct.BTreeMap.html}. E possui complexidade também documentada para cada operação \footnote{https://doc.rust-lang.org/std/collections/\#cost-of-collection-operations} exceto a de iterar sobre todos valores.
+
+Mas para a operação de iteração na pagina sobre BTree\footnote{\label{btree}}, é descrito que a operação de produzir o próprio valor no iterador tem custo $\Theta(\log n)$ no pior caso, mas amortizado possui tempo constante por item $\Theta(1)$, portanto, para ler todos valores, temos tempo linear.
+
+Para a operação de clone é possivel observar o codigo fonte\footnote{https://doc.rust-lang.org/stable/src/alloc/collections/btree/map.rs.html#224} e ver que é feito clone recursivamente da arvore, portanto trivialmente é linear em relação ao tamanho da arvore. 
+
+
+Portanto temos que 
+\begin{itemize}
+	\item \textbf{new()}: $\Theta(1)$
+	\item \textbf{get(key)}: $\Theta(\log k)$
+	\item \textbf{set\_or\_insert(key, value)}: $\Theta(\log k)$
+	\item \textbf{remove(key)}: $\Theta(\log k)$
+	\item \textbf{iterar todos elementos}: $\Theta(k)$ 
+	\item \textbf{from\_iter(iter)}: $\Theta(k)$
+    \item \textbf{clone()}: $\Theta(k)$
+\end{itemize}
+
+Portando, agora sobre a complexidade de cada uma das operações
+
+E para operação de adição a um vetor no caso de mapa de vetores, como é apenas um get, então também é constante
+\subsubsection{Acessar elemento}
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:} $\Theta(\log k) $,
+    \item \textbf{Complexidade de espaço:} $\Theta(1) $,
+\end{enumerate}
+
+\subsubsection{Transpor matriz}
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:} $\Theta(\log k)$,
+    \item \textbf{Complexidade de espaço:} $\Theta(1)$,
+\end{enumerate}
+
+\subsubsection{Multiplicação por escalar}
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:}  
+    $$\Theta(k) + \Theta(k)$$
+    $$\Theta(k)$$
+    
+    \item \textbf{Complexidade de espaço:} $\Theta(k)$,
+
+\end{enumerate}
+
+
+\subsubsection{Soma de matrizes} 
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:}  
+    $$M_{clone}(k_A) + M_{iter}(k_B) +  k_B(M_{set}(k_C) + M_{get}(k_A))$$
+    $$\Theta(k_A) + \Theta(k_B) +  k_B(\Theta(\log k_C) + \Theta(\log k_A))$$
+    $$\Theta(k_A + k_B +  k_B(\log k_C +\log k_A))$$
+    Sabendo que  $k_B \in O(k_B \log k_C)$
+    A complexidade final é a seguinte:
+    $$\Theta(k_A + k_B \log k_C)$$
+
+    E como $k_A \in O(k_A \log k_C)$
+    Então 
+    $$k_A + k_B \log k_C \in  O((k_A +k_B)k_C)$$
+    \item \textbf{Complexidade de espaço:} 
+    $$\Theta(k_C)$$, 
+\end{enumerate}
+
+\subsubsection{Mutiplicação de matrizes}
+
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:}  
+    $|A_C|$ representa a quantidade de colunas significativas em $A$,
+    $|B_L|$ representa a quantidade de colunas significativas em $B$
+    \begin{enumerate}
+        \item \textbf{Separação:} 
+        $$M_{iter}(k_A)+ M_{iter}(k_B) + k_A LM_{add}(|A_C|) +  k_B LM_{add}(|B_L|)$$
+        $$\Theta(k_A) + \Theta(k_B) + k_A \Theta(\log |A_C|)+  k_B \Theta(\log |B_L|)$$
+        $$\Theta(k_A\log |A_C|  + k_B\log |B_L|)$$ 
+        \item \textbf{Multiplicação:}
+            Na multiplicação esse é o custo para iterar em cada coluna de $A$ e ler uma linha em $B$
+            $$LM_{iter}(|A_C|) + |A_C| LM_{get}(|B_L|)$$
+            $$\Theta(|A_C|) + |A_C|\Theta(\log |B_L|)$$
+            $$\Theta(|A_C|\log |B_L|)$$
+            Custo para mutiplicar cada linha por cada coluna
+            $$\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}| (M_{get}(k_C) +  M_{set}(k_C))$$
+            $$\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}| (\Theta(\log k_C) +  \Theta(\log k_C))$$
+            $$\Theta(\log k_C)\cdot\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}|$$
+
+            Onde o nosso pior caso é quanto todos elementos de $|A|$ estão em uma única coluna, e todos elementos de $B$ estão em uma única linha. Onde o somatorio resulta em $k_A k_B$
+            
+            Podemos provar isso por absurdo, considerando que existe alguma distribuição $|A_{c=i}'|$ de elementos em $A$ e $|B_{c=i}'|$ de elementos em $B$, que o pior caso.
+            Poranto para essa sequencia ser pior que todos em uma unica linha/coluna, significa então:
+                $$\sum _{i= 1}^n  |A_{c=i}'| |B_{l=i}'| > k_A k_B$$
+            E como 
+            $$k_A = \sum_{i=1}^n |A_{c=i}'|  $$
+            $$k_B = \sum_{i=1}^n |B_{l=i}'| $$
+            Logo isso significa que:
+            \begin{align*}
+                 \sum _{i= 1}^n  |A_{c=i}'| |B_{l=i}'| &> k_A k_B
+                 \\ &> \left( \sum_{i=1}^n |A_{c=i}'|\right)  \left( \sum_{i=1}^n |B_{l=i}'| \right) 
+                 \\ &>  \sum_{i=1}^n \sum_{i=1}^n  |A_{c=i}'| |B_{l=j}'| 
+                 \\ &> \sum _{i= 1}^n  |A_{c=i}'| |B_{l=i}'|  +  \sum_{i=1}^n \sum_{j=1, j\neq i}^n  |A_{c=i}'| |B_{l=j}'|  
+            \end{align*}
+
+            Portanto:
+            $$0> \sum_{i=1}^n \sum_{j=1, j\neq i}^n  |A_{c=i}'| |B_{l=j}'|  $$
+            Que é impossível porque uma soma de tamanhos de conjunto deve ser no mínimo positiva. Portanto é uma contradição e não existe uma distribuição que o resultado seja maior.
+
+            Logo chegamos que a complexidade da mutiplicação das colunas pelas linhas no pior caso é quando quando todos elementos de B estão numa linha apenas e todos de A estão numa coluna só logo:
+            $$\Theta\left(|A_C|\log |B_L| + k_Ak_B\log k_C\right)$$
+            $$\Theta\left(1\log 1 + k_Ak_B\log k_C\right)$$
+            $$\Theta\left(k_Ak_B\log k_C\right)$$
+            
+    \end{enumerate}
+    Juntando então cada parte temos que a complexidade total da mutiplicação de matriz é
+    $$\Theta\left( k_A\log |A_C|  + k_B\log |B_L| + k_A k_B\log k_C\right)$$
+    E como no pior caso tudo estar numa coluna/linha apenas:
+    $$\Theta\left( k_A\log 1  + k_B\log 1 + k_A k_B\log k_C\right)$$
+
+    Chegamos a seguinte complexidade de tempo final:
+    $$\Theta\left(k_A k_B\log k_C\right)$$
+    
+    
+    
+    \item \textbf{Complexidade de espaço:} 
+    $$U(k_C) +U(k_A) + U(k_B)$$, 
+    O custo de espaço é o custo da nova matriz criada, mais o custo de manter o mapa auxiliar de colunas e linhas. 
+\end{enumerate}

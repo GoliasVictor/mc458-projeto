@@ -1,0 +1,53 @@
+
+\section{Comparação}
+
+Para todas as operações que eram para ter uma estimativa de tempo constante, apesar de ser estimativamente constante, há um crescimento mesmo em TableMatrix que faz acesso direto a memoria. 
+Suponho que o problema disso, seja alocamento e desalocamento de memoria nos brenchmarks que deve estar acontecendo.  Por causa que as matrizes são criadas e logo após não usadas nunca mais, então logo após de ter sido aplicado a operação o programa já libera a memoria. 
+
+Para TableMatrix, só foi possivel fazer samples até $10^3$, por causa  que além disso, a há estouro de memoria.
+
+\subsection{Get}
+Na leitura de valores, é perceptível que para hashmap é perceptivel que é o que tem a melhor performance que todos os outros, tendo tempo aproximadamente constante em nanosegundos para todos valores.
+
+Provavelmente em TableMatrix há uma perda de desempenho de memoria da memoria com o crescimento da matriz por causa de paginação da memoria.
+
+\input{tables/table_get}
+\pagebreak
+
+\subsection{Set}
+Possui as mesmas características que Get.
+
+
+\input{tables/table_set}
+
+\pagebreak
+\subsection{Transpor}
+
+Transposição é possível considerar que é afetado pela liberação de memoria por causa que,
+
+\begin{enumerate}
+    \item Em HashSet possui um tempo aproximadamente constante, por causa que o HashSet possui apenas um bloco gigante de memoria, então é preciso liberar apenas bloco.
+    \item Em TableMatrix é afetado porque são $10^3+1$ blocos de memorias de tamanho $10^3$  para serem liberados. 
+    \item Em TreeMatrix são diversos blocos de memorias da BTree que precisam ser liberados.
+\end{enumerate}
+Essa me parece ser a melhor explicação para isso estar acontecendo, tentei implementar os testes sem ser medido a liberação de memoria mas não consegui.
+
+\input{tables/table_transpose}
+
+\pagebreak
+\subsection{Multiplicação Escalar}
+Nesse caso, claramente é perceptivel, que para TableMatrix, depende puramente do tamanho da matriz e não de quantos elementos possuem na matriz. Onde no caso $10^3\times10^3$ com ocupação menor que 10\% é TableMatrix pior que os outros casos, já com 20\% é melhor que TreeMatrix. 
+
+\input{tables/table_muls}
+\pagebreak
+\subsection{ Adição}
+Para adição, o TableMatrix se demonstra muito mais eficiente do que as duas outras estruturas, sendo pior apenas nos casos 1\%. Apesar da quantidade de elementos TableMatrix ser maior que as outras estruturas e elementos que precisam ser lidos também. Processadores são extremamente otimizados para leitura e escrita sequencial de elementos, que faz com que TableMatrix se torne mais eficiente.  
+
+\input{tables/table_add}
+
+\subsection{Multiplicação}
+Mutiplicação aqui aparece como a operação que se tem o maior proveito da esparcidade da matriz,  como no caso $10^3\times10^3$ e 1\%, onde HashMapMatrix é mais de 100x mais performático que  TableMatrix.
+
+Nese caso também HashMapMatrix e TreeMatrix tem valores muito proximos também, apesar de que HashMapMatrix é constantemente mais performatico.
+
+\input{tables/table_mul}

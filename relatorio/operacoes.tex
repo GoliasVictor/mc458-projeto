@@ -1,0 +1,95 @@
+\subsection{Operações de MapMatrix}
+A seguir, são detalhadas as principais operações implementadas na estrutura MapMatrix:
+Essa sessão as equações são um pouco grandes, mas isso é por causa que é feito de forma genérica, então depende de como o Mapa é implementado, em sessões posteriores as complexidades são descritas de forma mais simples.
+Vamos usar a seguinte notação 
+\begin{enumerate}
+    \item $k, k_A, k_B$: Numero de elementos não nulos na matriz.
+    \item $|A_C|$, $|B_L|$: Numero de colunas em A, e o numero de linhsa em B.
+    \item $|A_{c=i}|$: Numero de elementos em uma coluna $i$ na matriz A
+    \item $|B_{l=i}|$: Numero de elementos em uma linhha $i$ na matriz B 
+    \item $M_{nome}(k)$ Tempo para execução de uma operação no Mapa com o nome especificado
+    
+    \item $LM_{nome}(k)$ Tempo para execução de uma operação no Mapa de Vetor com o nome especificado
+    \item $U(k)$ Tempo para execução de uma operação no Mapa com o nome especificado
+    
+\end{enumerate}
+
+nota: para complexidade de memoria será considerado o custo de chamada das operações em Map é desprezível.  
+
+
+
+Será usado a seguinte
+\subsubsection{Acessar elemento}
+O acesso de elemento é simples, é basicamente uma leitura do mapa associativo encapsulado, passando a posição do elemento como chave. Caso o elemento não exista na matriz, é retornado 0.
+
+
+
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:} $M_{get}(k) $,
+    \item \textbf{Complexidade de espaço:} $\Theta(1)$,
+\end{enumerate}
+\subsubsection{Transpor matriz}
+A operação de transpor matriz, apenas inverte o tamanho da linha/coluna e troca a flag de transposição, então tem custo constante.
+
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:} $\Theta(1)$,
+    \item \textbf{Complexidade de espaço:} $\Theta(1)$,
+\end{enumerate}
+
+\subsubsection{Multiplicação por escalar}
+A multiplicação por escalar é feita copiando o mapa, e então usando um iterador mutável, para cada valor multiplicação pelo escalar. E então retorna esse novo valor
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:}  
+    $$M_{clone} + M_{iter}(k) $$,
+    A complexidade de tempo é o custo de clonar  e de iterar mutiplicando cada valor da matriz
+    \item \textbf{Complexidade de espaço:} 
+    $$U(k)$$, 
+    O custo de espaço é o custo da nova matriz criada.
+\end{enumerate}
+
+
+\subsubsection{Soma de matrizes}
+A soma de matrizes primeiro clona $A$ criando a matriz $C$, então, itera por $B$ e obtêm o valor de $A$ na posição soma e guarda em $C$.
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:}  
+    $$M_{clone}(k_A) + M_{iter}(k_B) +  k_B(M_{set}(k_C) + M_{get}(k_A))$$
+    A complexidade de tempo é o custo de copiar $A$, e o custo para cada valor de $B$, ler de $A$ e escrever em $C$  
+    \item \textbf{Complexidade de espaço:} 
+    $$U(k_C) + U_{set}(k) + U_{set}(k)$$, 
+    O custo de espaço é o custo da nova matriz criada, mas o custo de espaço para executar a operação de set e get.
+\end{enumerate}
+
+\subsubsection{Mutiplicação de matrizes}
+Para a mutiplicação de matriz temos como base a seguinte formula:
+$C_{i, j} = \sum_{k=1}^n A_{i, k} B_{k, j}$
+E como é perceptível, para mutiplicação de matriz, os elementos na numa coluna $k$ de $A$ só será mutiplicado com elementos de uma linha $k$ em $B$, significa.
+
+Portanto, o que fazemos, é então, é primeiro separar os elementos de $A$ por linha, e o de $B$ por coluna, e então multiplicamos cada linha pela respectiva coluna e somamos em $C$.
+
+Que o algoritmo possui duas partes principais:
+
+\textbf{Separação:} É criado um mapa das colunas de $A$ e um das linhas de $B$, e então iteramos em $A$ adicionando nas sua respectiva coluna, e iteramos em $B$ os adicionando nas suas respectivas $linhas$.
+
+\textbf{Multiplicação:} Então, para cada linha de $A$ é feito a leitura da coluna correspondente em $B$, e então iterado em cada um dos elementos na linha e coluna, e multiplicados e somados a $C$
+\begin{enumerate}
+    \item \textbf{Complexidade de tempo:}  
+    $|A_C|$ representa a quantidade de colunas significativas em  $A$,
+    $|B_L|$ representa a quantidade de colunas significativas em $B$
+    \begin{enumerate}
+        \item \textbf{Separação:} 
+            $$M_{iter}(k_A)+ M_{iter}(k_B) + k_A LM_{add}(|A_C|) +  k_B LM_{add}(|B_L|)$$
+
+        A complexidade de tempo é o custo de iterar em cada uma das matrizes, mais o custo de para cada um dos valores adicionar um elemento a mais, onde o tamanho de cada um dos mapa de vetores, é a quantidade de colunas relevantes em $A$ e a quantidade de colunas relevantes em $B$
+        \item \textbf{Multiplicação:}
+            Na multiplicação esse é o custo para iterar em cada coluna de $A$ e ler uma linha em $B$
+            $$LM_{iter}(|A_C|) + |A_C| LM_{get}(|B_L|)$$
+            
+            Como guardamos cada elemento de cada linha/coluna num vetor, sabemos que tem um custo linear iterar neles, e o custo da nossa multiplicação se dá pela quantidades de elementos na coluna  ($A_{c=n}$) e a quantidade de elementos da linha ($B_{l=n}$).  Porque iremos fazer cada uma das combinações de elementos na linha e coluna, e para cada combinação iremos ler de ser e atribuir um novo valor, portanto:
+            $$\sum _{i= 1}^n  |A_{c=i}| |B_{l=i}| (M_{get}(k_C) +  M_{set}(k_C))$$.
+            
+    \end{enumerate}
+    
+    \item \textbf{Complexidade de espaço:} 
+    $$U(k_C) +U(k_A) + U(k_B)$$, 
+    O custo de espaço é o custo da nova matriz criada, mais o custo de manter o mapa auxiliar de colunas e linhas. 
+\end{enumerate}
