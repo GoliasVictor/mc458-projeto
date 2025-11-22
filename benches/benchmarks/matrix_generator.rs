@@ -34,24 +34,4 @@ impl MatrixGenerator {
             }   
         )
     }
-    pub fn permutation_matrix<M : Matrix>(size: Pair, population : usize) -> M {
-        let mut rng = rand::rng();
-        let total = size.0 * size.1;
-        let mut rows = (0..size.0).collect::<Vec<usize>>();
-        let mut cols = (0..size.1).collect::<Vec<usize>>();
-        rows.shuffle(&mut rng);
-        cols.shuffle(&mut rng);
-        let values = rows
-            .iter()
-            .zip(cols.iter())
-            .take(std::cmp::min(size.0, size.1))
-            .map(|(&r, &c)| ((r, c), 1.0))
-            .collect();
-        M::from_info(
-            &MatrixInfo {
-                size,
-                values,
-            }   
-        )
-    }
 }

@@ -25,7 +25,7 @@ df['avg_duration'] = df['durations_nano'].apply(lambda x: np.min(x))
 
 df['k'] = df['population'] 
 # Agrupar dados
-grouped = df.groupby(['operation', 'matrix_type', 'generator', 'k'])['avg_duration'].mean().reset_index()
+grouped = df.groupby(['operation', 'matrix_type', 'generator', 'occupation','k'])['avg_duration'].mean().reset_index()
 
 # Configurar gráfico
 plt.figure(figsize=(12, 8))
@@ -112,6 +112,16 @@ assintoc_functions = {
     '6-quadratic-log': lambda k: k**2 * np.log(k),
 } 
 
+assintoc_labels = {
+    '0-constant': '1',
+    '1-linear': 'n',
+    '2-nlog': 'n \\log n',
+    '3-nsqrt': 'n \\sqrt{n}',
+    '4-nlogsqrt': 'n \\log n \\sqrt{n}',
+    '5-quadratic': 'n^2',
+    '6-quadratic-log': 'n^2 \\log n',
+}
+occupations = df['occupation'].unique()
     
 for generator in generators:
     for operation in operations:
@@ -121,32 +131,34 @@ for generator in generators:
                 & (grouped['matrix_type'] == matrix_type) 
                 & (grouped['generator'] == generator)
             ]
-            subset = subset[subset['k'] > 100] 
+            subset = subset[subset['k'] > 1000] 
             subset = rolling_outlier_filter(subset, column='avg_duration', sorted_by='k', n=10, threshold=1)
 
             for assintotic_name, assintoc_function in assintoc_functions.items():
                 subset['f'] =  subset['avg_duration'] / assintoc_function(subset['k'])                
                 inf_subset = lim_inf_filter(subset, column='avg_duration', sorted_by='k', n=5, threshold=1)
                 sup_subset = lim_sup_filter(subset, column='avg_duration', sorted_by='k', n=5, threshold=1)
-                plt.plot(subset['k'], subset['f'], 'o', markersize=4, alpha=0.1)
+                for occupation in occupations:
+                    occ_subset = subset[subset['occupation'] == occupation]
+                    plt.plot(occ_subset['k'], occ_subset['f'], 'o', markersize=4, alpha=0.1)
             
                 slope, intercept, r, p, std_err = stats.linregress(subset['k'], subset['f'])
                 plt.plot(subset['k'], intercept + slope*subset['k'], '--', label=f"Linear Fit (r={r:.2f})")
                 
                 mean_f = (subset['f']*subset['k']).sum() / (subset['k'].sum())
-                plt.axhline(y=mean_f, color='gray', linestyle='--', alpha=0.5)
+                plt.axhline(y=mean_f, color='gray', linestyle='--', alpha=0.5, label=f"Média Ponderada: {mean_f:.2e}")
 
     
                 
                 inf_smooth = plot_smooth_curve(inf_subset['k'], inf_subset['f'], window_length=7, polyorder=3)
                 sup_smooth = plot_smooth_curve(sup_subset['k'], sup_subset['f'], window_length=7, polyorder=3)
-                plt.plot(inf_subset['k'], inf_smooth, label="carlos", color='blue', linewidth=2)
-                plt.plot(sup_subset['k'], sup_smooth, label="carlos", color='red', linewidth=2)
+                plt.plot(inf_subset['k'], inf_smooth, label="Infimum", color='blue', linewidth=2)
+                plt.plot(sup_subset['k'], sup_smooth, label="Supremum", color='red', linewidth=2)
 
                 
                 plt.ylim(bottom=0)
                 plt.xlabel('População')
-                plt.ylabel('Duração Média / População (nano segundos)')
+                plt.ylabel(f'Duração Média / ${assintoc_labels[assintotic_name]}$  (nano segundos)')
                 plt.title('Desempenho de Operações com Matrizes')
                 plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
                 plt.grid(True, alpha=0.3)

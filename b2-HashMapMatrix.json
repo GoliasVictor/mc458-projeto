@@ -1,0 +1,5306 @@
+[
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13048319
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 8317,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 14221514
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6905,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10691654
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5745,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7558119
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4774,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5859455
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3969,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6444726
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3306,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3408504
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2745,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2085999
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2284,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1663643
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1900,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2392365
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1584,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1387767
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1317,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1452123
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1095,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 869186
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 906,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 541068
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 756,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 533516
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 630,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 414935
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 524,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 267606
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 432,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 168418
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 361,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 232236
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 299,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 151070
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 249,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 107984
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 207,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 88463
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 171,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 67353
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 144,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 71731
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 118,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 59894
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 100,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 44732
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 82,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 37874
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 68,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 27250
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 56,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23691
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 47,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 18330
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 39,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13427
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 32,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13749
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 27,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9491
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 22,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12280
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 18,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7704
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 15,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4830
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 12,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3881
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4751
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3145
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2095
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1848
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1592
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1186
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 888
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 728
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1198
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1083
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1041
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1153
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1073
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 989
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 50000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 507219986
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 41587,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 373981979
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 34528,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 309514508
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 28728,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 257113854
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 23874,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 201911174
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 19845,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 134787441
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 16531,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 86669132
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 13728,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 55232645
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 11424,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 55893197
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9504,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 46455092
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7920,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 20609317
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6588,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 20752548
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5478,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16533552
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4530,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10264084
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3781,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8039171
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3150,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7662367
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2622,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4121609
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2163,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4261297
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1805,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2904125
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1496,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1647332
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1248,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1527746
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1036,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1317906
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 858,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 794056
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 720,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 751816
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 594,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 589256
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 500,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 611465
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 414,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 379365
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 344,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 338083
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 281,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 281446
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 238,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 219453
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 198,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 165437
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 162,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 148868
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 135,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 96968
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 110,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 58675
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 92,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 65005
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 76,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 35632
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 64,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 31979
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 54,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23525
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 45,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 18764
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 36,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 14758
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 31,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13689
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 24,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9428
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 20,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7505
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 18,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7149
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 14,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4800
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 11,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3023
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3494
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 8,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2428
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1950
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1580
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2219
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 100000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 2,
+        "nanos": 71241815
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 83174,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 520842541
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 69056,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 44106731
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 57456,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 789642797
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 47748,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 576201882
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 39690,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 397985937
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 33062,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 291276451
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 27457,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 223655216
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 22848,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 144938780
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 19009,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 119245347
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 15840,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 90242452
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 13176,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 79643902
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10956,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 49052781
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9060,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 41129091
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7562,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 34616403
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6300,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 19782693
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5244,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 15240579
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4326,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12147789
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3610,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12035815
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2992,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8337814
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2496,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4452373
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2073,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3597454
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1716,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2969330
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1440,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2560999
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1188,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3039413
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1000,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1750775
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 828,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 961383
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 688,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 777564
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 562,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 522382
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 476,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 438709
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 396,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 400571
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 324,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 271183
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 270,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 227772
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 220,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 162666
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 184,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 124900
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 152,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 141554
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 129,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 83814
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 108,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 68184
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 90,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 70912
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 72,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 37539
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 62,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 33097
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 48,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23817
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 40,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 18570
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 36,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 21182
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 28,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12433
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 22,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7686
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 19,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11174
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 16,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6829
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 14,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4927
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3894
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5166
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 200000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 8,
+        "nanos": 787875725
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 166348,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 6,
+        "nanos": 887971921
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 138112,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 4,
+        "nanos": 659955143
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 114912,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 4,
+        "nanos": 330635801
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 95496,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 3,
+        "nanos": 629180145
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 79380,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 689798313
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 66125,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 114892195
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 54915,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 959711413
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 45696,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 854075408
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 38019,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 620702197
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 31680,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 590073311
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 26353,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 465364811
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 21912,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 268641654
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 18120,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 188866399
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 15125,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 150971120
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 12600,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 120516487
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10488,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 69094986
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 8652,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 64963993
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7220,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 48224304
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5985,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 39135268
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4992,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 26086581
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4147,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 20323560
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3432,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13704269
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2880,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9381037
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2376,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7446031
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2000,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4875299
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1656,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5015927
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1377,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3256136
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1125,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2830467
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 952,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2621282
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 793,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2309035
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 649,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1167115
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 540,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 964492
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 441,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 762619
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 369,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 541298
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 304,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 425852
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 259,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 364880
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 217,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 234079
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 180,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 201830
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 145,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 172441
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 125,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 121310
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 96,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 94372
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 80,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 66292
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 72,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 53327
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 57,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 44702
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 45,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 31103
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 39,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 26622
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 33,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 24217
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 28,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16719
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12738
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12585
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2294782
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 8317,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1771136
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6905,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1694271
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5745,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 855824
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4774,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 642905
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3969,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 550441
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3306,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 725295
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2745,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 466442
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2284,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 475284
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1900,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 421336
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1584,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 279184
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1317,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 345480
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1095,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 290974
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 906,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 148390
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 756,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 114545
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 630,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 82638
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 524,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 73987
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 432,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 55901
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 361,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 45850
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 299,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 40201
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 249,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 39738
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 207,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 31363
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 171,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 28478
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 144,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 26166
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 118,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23790
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 100,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12872
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 82,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11214
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 68,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9809
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 56,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11321
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 47,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6278
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 39,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8383
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 32,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4915
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 27,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3733
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 22,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4126
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 18,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2849
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 15,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2473
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 12,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1705
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1492
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1393
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1987
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1720
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 839
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 752
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 742
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 497
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 514
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 256
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 236
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 231
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8051
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 330
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 50000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11967470
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 41587,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7488769
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 34528,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9603936
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 28728,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6717938
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 23874,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4187725
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 19845,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2871046
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 16531,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5015091
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 13728,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1770331
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 11424,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2309845
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9504,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2084134
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7920,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1229609
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6588,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1216457
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5478,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1177205
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4530,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 864970
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3781,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 933548
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3150,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 372541
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2622,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 321944
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2163,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 303308
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1805,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 147440
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1496,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 197639
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1248,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 162232
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1036,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 160740
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 858,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 105036
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 720,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 89309
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 594,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 89273
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 500,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 72229
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 414,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 51450
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 344,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 48068
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 281,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 56320
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 238,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 52270
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 198,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 37364
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 162,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 29384
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 135,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 28455
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 110,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 20512
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 92,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16252
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 76,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 14441
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 64,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 14822
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 54,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11221
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 45,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8438
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 36,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5257
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 31,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4927
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 24,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3372
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 20,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4451
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 18,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3864
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 14,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2683
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 11,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2373
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1620
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 8,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2229
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1725
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1329
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1632
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 100000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 21911207
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 83174,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 25532228
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 69056,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 15892496
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 57456,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9785361
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 47748,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10368462
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 39690,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9361016
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 33062,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6341417
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 27457,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5283984
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 22848,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3731371
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 19009,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4107138
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 15840,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2759985
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 13176,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2972536
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10956,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1653413
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 9060,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1277593
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7562,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1400481
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 6300,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2048521
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5244,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 870238
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4326,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 580278
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3610,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 316768
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2992,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 396305
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2496,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 339464
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2073,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 411768
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1716,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 219169
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1440,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 183153
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1188,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 170818
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1000,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 151452
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 828,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 103861
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 688,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 126408
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 562,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 119117
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 476,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 103203
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 396,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 81184
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 324,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 59610
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 270,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 52883
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 220,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 37113
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 184,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 31287
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 152,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 28099
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 129,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 25063
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 108,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 18403
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 90,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 15303
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 72,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13349
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 62,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12626
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 48,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9071
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 40,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7374
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 36,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10093
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 28,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5291
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 22,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4420
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 19,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3928
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 16,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3566
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 14,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2681
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2036
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2001
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 200000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 46441409
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 166348,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 39148212
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 138112,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 34690955
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 114912,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 24308570
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 95496,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 22342844
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 79380,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 22340632
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 66125,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16760155
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 54915,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16043338
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 45696,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13522002
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 38019,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11130493
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 31680,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8548313
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 26353,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3836472
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 21912,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3839145
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 18120,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5801656
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 15125,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1453184
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 12600,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2181184
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 10488,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2906140
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 8652,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1306322
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 7220,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 746381
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 5985,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1082616
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4992,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1048642
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 4147,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1115861
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 3432,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 592016
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2880,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 351476
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2376,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 305185
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 2000,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 367805
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1656,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 195741
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1377,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 268592
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 1125,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 146367
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 952,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 100184
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 793,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 98649
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 649,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 83291
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 540,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 75476
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 441,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 55598
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 369,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 46457
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 304,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 41043
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 259,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 36930
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 217,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 38914
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 180,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 28049
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 145,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 20618
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 125,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11233
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 96,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16108
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 80,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11574
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 72,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11318
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 57,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5304
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 45,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7340
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 39,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5515
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 33,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8434
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 28,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3909
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3098
+      }
+    ]
+  },
+  {
+    "matrix_type": "HashMapMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3047
+      }
+    ]
+  }
+]

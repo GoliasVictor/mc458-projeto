@@ -1,0 +1,5306 @@
+[
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 918823892
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 8317,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 905489082
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6905,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 100477021
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5745,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 683682583
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4774,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 501061409
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3969,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 364230028
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3306,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 283097795
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2745,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 213035489
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2284,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 166845799
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1900,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 163954664
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1584,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 120183232
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1317,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 76816938
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1095,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 60490665
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 906,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 44417237
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 756,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 38742270
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 630,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 28664202
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 524,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 21433656
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 432,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16151761
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 361,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11362714
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 299,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8356284
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 249,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8659553
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 207,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6718546
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 171,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3251434
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 144,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4279606
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 118,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2031230
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 100,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1813615
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 82,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2207594
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 68,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1071609
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 56,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 655425
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 47,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 514735
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 39,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 404498
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 32,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 375061
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 27,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 242590
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 22,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 192122
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 18,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 207357
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 15,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 147162
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 12,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 127238
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 90283
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 73932
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 51829
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 45221
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 31737
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 24089
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 18454
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 17695
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10363
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9145
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7932
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7342
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3830
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3723
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 50000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 923690403
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 41587,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 553348982
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 34528,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 149579224
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 28728,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 755108948
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 23874,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 591546665
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 19845,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 434289014
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 16531,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 286143701
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 13728,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 283209299
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 11424,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 172563109
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9504,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 128598218
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7920,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 94825020
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6588,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 75581193
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5478,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 59510122
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4530,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 45713860
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3781,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 35198216
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3150,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 24927393
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2622,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 19462224
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2163,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 15707469
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1805,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11960384
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1496,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8045751
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1248,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8959635
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1036,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5108838
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 858,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6165740
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 720,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3930063
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 594,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2603675
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 500,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2058675
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 414,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1344331
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 344,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 854864
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 281,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 884661
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 238,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 527678
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 198,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 383636
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 162,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 299168
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 135,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 254603
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 110,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 184378
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 92,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 155180
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 76,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 128177
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 64,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 116193
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 54,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 89054
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 45,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 75523
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 36,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 56412
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 31,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 44093
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 24,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 32716
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 20,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 27112
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 18,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 21758
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 14,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16185
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 11,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11379
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9743
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 8,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7816
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7069
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4553
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4399
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 100000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 675440364
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 83174,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 195726247
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 69056,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 906746406
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 57456,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 671356847
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 47748,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 490974139
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 39690,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 365940717
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 33062,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 277824110
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 27457,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 223986446
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 22848,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 156615245
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 19009,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 126474647
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 15840,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 94064737
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 13176,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 73611641
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10956,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 56650022
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9060,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 45529458
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7562,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 36026088
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6300,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 35001027
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5244,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23237758
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4326,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 15669571
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3610,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12999936
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2992,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7409455
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2496,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8198636
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2073,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4372390
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1716,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4924968
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1440,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3131136
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1188,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2394134
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1000,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1390702
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 828,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1063795
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 688,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1098557
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 562,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 719376
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 476,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 493312
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 396,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 423514
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 324,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 335315
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 270,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 374604
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 220,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 204494
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 184,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 153230
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 152,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 133949
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 129,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 114584
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 108,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 82649
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 90,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 71390
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 72,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 56155
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 62,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 43634
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 48,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 32630
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 40,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 24383
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 36,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 22310
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 28,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16477
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 22,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11164
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 19,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9467
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 16,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8171
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 14,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6940
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4781
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4086
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 200000,
+    "size": 1000,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 893143000
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 166348,
+    "size": 912,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 424984025
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 138112,
+    "size": 831,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 1,
+        "nanos": 32478377
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 114912,
+    "size": 758,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 710265343
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 95496,
+    "size": 691,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 489983747
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 79380,
+    "size": 630,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 376392882
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 66125,
+    "size": 575,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 267920759
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 54915,
+    "size": 524,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 211932141
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 45696,
+    "size": 478,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 163651951
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 38019,
+    "size": 436,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 122270055
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 31680,
+    "size": 398,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 100008735
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 26353,
+    "size": 363,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 76005217
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 21912,
+    "size": 331,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 60505753
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 18120,
+    "size": 301,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 48037685
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 15125,
+    "size": 275,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 33492176
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 12600,
+    "size": 251,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 25679678
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10488,
+    "size": 229,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 21155897
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 8652,
+    "size": 208,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 15394985
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7220,
+    "size": 190,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 12244254
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5985,
+    "size": 173,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8950203
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4992,
+    "size": 158,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6687418
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4147,
+    "size": 144,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5140187
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3432,
+    "size": 131,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4985135
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2880,
+    "size": 120,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2573398
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2376,
+    "size": 109,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1816771
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2000,
+    "size": 100,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1495770
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1656,
+    "size": 91,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1160256
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1377,
+    "size": 83,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1034008
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1125,
+    "size": 75,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 630312
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 952,
+    "size": 69,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 802462
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 793,
+    "size": 63,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 635209
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 649,
+    "size": 57,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 470353
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 540,
+    "size": 52,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 374484
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 441,
+    "size": 47,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 333322
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 369,
+    "size": 43,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 253437
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 304,
+    "size": 39,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 158083
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 259,
+    "size": 36,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 122165
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 217,
+    "size": 33,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 98375
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 180,
+    "size": 30,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 67893
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 145,
+    "size": 27,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 53274
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 125,
+    "size": 25,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 42810
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 96,
+    "size": 22,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 29717
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 80,
+    "size": 20,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23752
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 72,
+    "size": 19,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 20566
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 57,
+    "size": 17,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 18001
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 45,
+    "size": 15,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11360
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 39,
+    "size": 14,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9695
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 33,
+    "size": 13,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7408
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 28,
+    "size": 12,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7089
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4594
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "mul",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4460
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6580667
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 8317,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6429037
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6905,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6620095
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5745,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7700497
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4774,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1667767
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3969,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4110963
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3306,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1690606
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2745,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1391987
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2284,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1540316
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1900,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1031471
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1584,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 997712
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1317,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 608100
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1095,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 706551
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 906,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 292917
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 756,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 360118
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 630,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 286444
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 524,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 223919
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 432,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 424393
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 361,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 164641
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 299,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 88119
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 249,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 72010
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 207,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 58725
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 171,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 49289
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 144,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 54226
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 118,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 37909
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 100,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 32136
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 82,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 45938
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 68,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 37967
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 56,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 34012
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 47,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 19408
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 39,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 16389
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 32,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13421
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 27,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11899
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 22,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 14029
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 18,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9474
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 15,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8233
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 12,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10576
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6688
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5785
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5203
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4515
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3887
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3580
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3318
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4652
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3249
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3427
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2019
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2342
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2415
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1484
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 50000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7229151
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 41587,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5701052
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 34528,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5355842
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 28728,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5669950
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 23874,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1673389
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 19845,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2078667
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 16531,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1772753
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 13728,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1432209
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 11424,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1092597
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9504,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 654290
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7920,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 711883
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6588,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 702289
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5478,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 340870
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4530,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 298214
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3781,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1353030
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3150,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 365695
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2622,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 163943
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2163,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 144265
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1805,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 239475
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1496,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 96067
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1248,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 80121
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1036,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 62854
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 858,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 54320
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 720,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 70360
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 594,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 37756
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 500,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 32746
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 414,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 40045
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 344,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 34537
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 281,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 50238
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 238,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 27930
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 198,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23763
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 162,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 19001
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 135,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 18139
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 110,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 14635
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 92,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13507
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 76,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11575
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 64,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10833
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 54,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9295
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 45,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9310
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 36,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8043
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 31,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6657
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 24,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6663
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 20,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5226
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 18,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4645
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 14,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4270
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 11,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3002
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2914
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 8,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3021
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2692
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2190
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2625
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 100000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3879182
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 83174,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2879696
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 69056,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3627167
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 57456,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5521558
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 47748,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1840745
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 39690,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3165000
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 33062,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1110571
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 27457,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2278707
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 22848,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 787661
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 19009,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 619035
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 15840,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 846262
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 13176,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 645203
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10956,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 525676
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 9060,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 682212
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7562,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 253160
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 6300,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 173486
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5244,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 401865
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4326,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 180374
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3610,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 165383
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2992,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 111918
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2496,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 128836
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2073,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 155430
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1716,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 95555
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1440,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 61121
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1188,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 59329
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1000,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 31681
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 828,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 26943
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 688,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 23925
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 562,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 20089
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 476,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 27113
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 396,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 15736
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 324,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13522
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 270,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11986
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 220,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10346
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 184,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 9299
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 152,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8322
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 129,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7132
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 108,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 6556
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 90,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5684
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 72,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5320
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 62,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4654
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 48,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4037
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 40,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3747
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 36,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3412
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 28,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2983
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 22,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2325
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 19,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2064
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 16,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1957
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 14,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1766
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1467
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1455
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 200000,
+    "size": 1000,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3434585
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 166348,
+    "size": 912,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3072032
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 138112,
+    "size": 831,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5318356
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 114912,
+    "size": 758,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2148138
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 95496,
+    "size": 691,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1768271
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 79380,
+    "size": 630,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1809580
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 66125,
+    "size": 575,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3054758
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 54915,
+    "size": 524,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 896483
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 45696,
+    "size": 478,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 1137743
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 38019,
+    "size": 436,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 830071
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 31680,
+    "size": 398,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 740242
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 26353,
+    "size": 363,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 661204
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 21912,
+    "size": 331,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 740769
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 18120,
+    "size": 301,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 476883
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 15125,
+    "size": 275,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 379397
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 12600,
+    "size": 251,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 398700
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 10488,
+    "size": 229,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 264098
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 8652,
+    "size": 208,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 250737
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 7220,
+    "size": 190,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 188868
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 5985,
+    "size": 173,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 159710
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4992,
+    "size": 158,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 135349
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 4147,
+    "size": 144,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 103575
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 3432,
+    "size": 131,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 86610
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2880,
+    "size": 120,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 92152
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2376,
+    "size": 109,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 58061
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 2000,
+    "size": 100,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 106681
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1656,
+    "size": 91,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 43182
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1377,
+    "size": 83,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 67379
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 1125,
+    "size": 75,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 33790
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 952,
+    "size": 69,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 29521
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 793,
+    "size": 63,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 24885
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 649,
+    "size": 57,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 42678
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 540,
+    "size": 52,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 19939
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 441,
+    "size": 47,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 17050
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 369,
+    "size": 43,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 17094
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 304,
+    "size": 39,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 14913
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 259,
+    "size": 36,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 13654
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 217,
+    "size": 33,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 11958
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 180,
+    "size": 30,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 10145
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 145,
+    "size": 27,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7595
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 125,
+    "size": 25,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 8666
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 96,
+    "size": 22,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 7178
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 80,
+    "size": 20,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5315
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 72,
+    "size": 19,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 5398
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 57,
+    "size": 17,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 4536
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 45,
+    "size": 15,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3522
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 39,
+    "size": 14,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 3115
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 33,
+    "size": 13,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2845
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 28,
+    "size": 12,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2556
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2359
+      }
+    ]
+  },
+  {
+    "matrix_type": "TableMatrix",
+    "population": 20,
+    "size": 10,
+    "operation": "add",
+    "generator": "uniform",
+    "durations": [
+      {
+        "secs": 0,
+        "nanos": 2283
+      }
+    ]
+  }
+]
