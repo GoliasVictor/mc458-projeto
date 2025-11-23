@@ -1,3 +1,20 @@
+//! Implementação de matrizes esparsas baseadas em mapas.
+//!
+//! Este módulo fornece `MapMatrix`, uma implementação genérica de matriz esparsa
+//! que pode usar diferentes tipos de mapas (HashMap, BTreeMap, etc.) para armazenar
+//! apenas valores não-zero.
+//!
+//! # Características Principais
+//!
+//! - **Eficiência de Memória**: Armazena apenas valores não-zero
+//! - **Transposição O(1)**: Usa flag de transposição ao invés de realocar
+//! - **Genérica**: Funciona com qualquer implementação de Map
+//!
+//! # Tipos Disponíveis
+//!
+//! - `HashMapStore`: Implementação usando `HashMap` (acesso O(1) médio)
+//! - `TreeStore`: Implementação usando `BTreeMap` (acesso O(log k))
+
 mod tree_map;
 mod hash_map;
 mod transposable_map;
@@ -8,52 +25,121 @@ use crate::basic::{Matrix, MatrixInfo, Pair};
 use std::borrow::Cow; 
 
 
-/// Estrutura que guarda um mapa de chaves de do K para valores do tipo U
-/// A chave K e U deve ser clonavel.
+/// Trait para estruturas de mapa que podem ser usadas em `MapMatrix`.
+///
+/// Define as operações básicas necessárias para implementar uma matriz esparsa.
+/// A chave `K` e o valor `U` devem ser clonáveis.
+///
+/// # Parâmetros de Tipo
+/// - `K`: Tipo da chave (deve implementar `Copy`)
+/// - `U`: Tipo do valor (deve implementar `Clone`)
+///
+/// # Implementações
+/// - `HashMapStore`: Baseado em `HashMap`
+/// - `TreeStore`: Baseado em `BTreeMap`
 pub trait Map<K : Copy, U : Clone > : Clone {
-	// Cria um mapa a partir de um iterador de pares (K,U)
+	/// Cria um mapa a partir de um iterador de pares (chave, valor).
+	///
+	/// # Argumentos
+	/// * `iter` - Iterador de tuplas (K, U)
 	fn from_iter<I: IntoIterator<Item=(K,U)>>(iter: I) -> Self;
 
-	/// Insere ou atualiza o valor associado a chave
+	/// Insere ou atualiza o valor associado à chave.
+	///
+	/// Se a chave já existe, seu valor é atualizado.
+	///
+	/// # Argumentos
+	/// * `key` - Chave a ser inserida/atualizada
+	/// * `value` - Novo valor
 	fn set_or_insert(&mut self, key: K, value: U);
 	
-	/// Remove o valor associado a chave
+	/// Remove o valor associado à chave.
+	///
+	/// # Argumentos
+	/// * `key` - Chave a ser removida
 	fn remove(&mut self, key: &K);
 	
-	/// Retorna uma referencia ao valor associado a chave, ou None se a chave nao existir
+	/// Retorna uma referência ao valor associado à chave.
+	///
+	/// # Argumentos
+	/// * `key` - Chave a ser consultada
+	///
+	/// # Retorno
+	/// `Some(&U)` se a chave existe, `None` caso contrário
 	fn get(&self, key: &K) -> Option<&U>;
 
-	/// Retorna um iterador sobre os pares (K, U) do mapa
-	/// Cow<'a, U> é copy-on-write, permitindo retornar referencias ou valores proprietarios dependendo do contexto, otimizando o uso de memoria
+	/// Retorna um iterador sobre os pares (chave, valor) do mapa.
+	///
+	/// Usa `Cow` (copy-on-write) para permitir retornar referências ou valores
+	/// proprietários dependendo do contexto, otimizando o uso de memória.
+	///
+	/// # Retorno
+	/// Iterador sobre pares (K, Cow<'a, U>)
 	fn iter<'a>(&'a self) -> Box<dyn Iterator<Item=(K, Cow<'a, U>)> + 'a>;
 
-
-	/// Retorna um iterador mutavel sobre os pares (K, &mut U) do mapa
-	/// Permite modificar os valores diretamente durante a iteraçao
+	/// Retorna um iterador mutável sobre os pares (chave, valor) do mapa.
+	///
+	/// Permite modificar os valores diretamente durante a iteração.
+	///
+	/// # Retorno
+	/// Iterador sobre pares (K, &'a mut U)
 	fn iter_mut<'a>(&'a mut self) -> Box<dyn Iterator<Item=(K, &'a mut U)> + 'a>;
 
 }
 
-/// Extensao do Map para valores que sao vetores, permitindo adicionar elementos ao vetor associado a chave
+/// Extensão do trait `Map` para mapas cujos valores são vetores.
+///
+/// Fornece uma operação conveniente para adicionar elementos aos vetores
+/// associados a chaves.
+///
+/// # Parâmetros de Tipo
+/// - `K`: Tipo da chave (deve implementar `Copy`)
+/// - `U`: Tipo dos elementos do vetor (deve implementar `Clone`)
 pub trait MapVec <K : Copy, U : Clone> : Map<K, Vec<U>> { 
-	/// Adiciona um valor ao vetor associado a chave, criando o vetor se a chave nao existir
+	/// Adiciona um valor ao vetor associado à chave.
+	///
+	/// Se a chave não existe, cria um novo vetor contendo o valor.
+	///
+	/// # Argumentos
+	/// * `key` - Chave do vetor
+	/// * `value` - Valor a ser adicionado ao vetor
 	fn add_to_vec(&mut self, key: K, value: U);
 }
 
 
-/// Matriz baseada em mapas para armazenar os valores
-/// - `T`: tipo do mapa usado para armazenar os valores da matriz
-/// - `LM`: tipo do mapa usado para armazenar os valores por linha ou coluna (usado na multiplicacao)
-/// O tempo de cada uma das operações depende da implementaçao do mapa usado
-/// Será represenado como T::operacao a complexidade de tempo da operaçao do mapa T
-/// Será representando como T::full_iter a complexidade de tempo para iterar sobre todos os elementos do mapa T
-
+/// Matriz esparsa genérica baseada em mapas.
+///
+/// Esta estrutura implementa uma matriz esparsa que armazena apenas valores não-zero
+/// usando um mapa genérico. A escolha do tipo de mapa afeta o desempenho das operações.
+///
+/// # Parâmetros de Tipo
+///
+/// - `T`: Tipo do mapa usado para armazenar os valores da matriz
+/// - `LM`: Tipo do mapa usado para armazenar valores por linha/coluna (usado na multiplicação)
+///
+/// # Complexidade das Operações
+///
+/// O tempo de cada operação depende da implementação do mapa usado:
+/// - T::operacao: complexidade da operação no mapa T
+/// - T::full_iter: complexidade para iterar sobre todos os elementos do mapa T
+///
+/// # Exemplos
+///
+/// ```
+/// use projeto::{HashMapMatrix, Matrix};
+///
+/// let mut matrix = HashMapMatrix::new((100, 100));
+/// matrix.set((0, 0), 1.0);
+/// matrix.set((50, 50), 2.0);
+/// // Usa apenas memória para 2 elementos, não 10000
+/// ```
 pub struct MapMatrix <T:  Map<Pair, f64>, LM : MapVec<usize, (Pair, f64)>> {
-	/// Dimensoes da matriz, representadas como um par (linhas, colunas)
+	/// Dimensões da matriz, representadas como um par (linhas, colunas)
     size: Pair,
-	/// Mapa que armazena os valores da matriz, podendo ser transposto
+	/// Mapa que armazena os valores não-zero da matriz, podendo ser transposto
     values: TransposableMap<T>,
-	/// PhantomData para o tipo LM, usado na multiplicacao, serve para indicar que a struct depende do tipo LM sem armazenar um valor dele
+	/// PhantomData para o tipo LM. Indica que a struct depende do tipo LM
+	/// sem armazenar um valor dele. Usado na multiplicação de matrizes.
 	phatom: std::marker::PhantomData<LM>
 }
 

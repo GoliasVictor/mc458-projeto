@@ -23,7 +23,7 @@
 //! ```
 //!
 //! # Referência
-//! Baseado em: https://www.ntietz.com/blog/rust-hashmap-overhead/
+//! Baseado em: <https://www.ntietz.com/blog/rust-hashmap-overhead/>
 
 use std::alloc::{GlobalAlloc, Layout, System};
 use std::sync::atomic::{AtomicUsize, Ordering};

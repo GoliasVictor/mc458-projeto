@@ -50,7 +50,7 @@ pub trait Matrix {
     
     /// Retorna a transposta da matriz.
     ///
-    /// A transposta de uma matriz A é uma matriz A^T onde A^T[i,j] = A[j,i].
+    /// A transposta de uma matriz A é uma matriz A^T onde A^T\[i,j\] = A\[j,i\].
     ///
     /// # Retorno
     /// Uma nova matriz que é a transposta da matriz atual
@@ -63,7 +63,7 @@ pub trait Matrix {
     /// * `b` - Segunda matriz
     ///
     /// # Retorno
-    /// Uma nova matriz que é a soma de a e b (C[i,j] = A[i,j] + B[i,j])
+    /// Uma nova matriz que é a soma de a e b (C\[i,j\] = A\[i,j\] + B\[i,j\])
     fn add(a : &Self, b : &Self) -> Self;
     
     /// Multiplica duas matrizes.
